@@ -1,8 +1,6 @@
 # 环境变量（含 API Key）
 .env
 
-# 教材 PDF（版权文件）
-textbook/*.pdf
 
 # 提取的章节文字
 data/chapter_texts/
