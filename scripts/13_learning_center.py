@@ -22,7 +22,9 @@ DATA_DIR = Path("data")
 KNOWLEDGE_DIR = DATA_DIR / "knowledge"
 OUTPUT_DIR = Path("output")
 OUTPUT_FILE = OUTPUT_DIR / "learning_center.html"
-PDF_PATH = "https://drive.google.com/file/d/1OdZEZc1VhcpbHvn8HRPYafJAKzywUCqo/preview"
+# Google Drive 直链（用于 docs.viewer 嵌入）
+GOOGLE_DRIVE_ID = "1OdZEZc1VhcpbHvn8HRPYafJAKzywUCqo"
+PDF_PATH = f"https://docs.google.com/viewer?url=https://drive.google.com/uc?export=download%26id={GOOGLE_DRIVE_ID}&embedded=true"
 
 random.seed(137)
 
