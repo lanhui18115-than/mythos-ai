@@ -131,6 +131,14 @@ body{font-family:'Segoe UI',sans-serif;background:#0a0a1a;color:#eee;min-height:
         <div class="hint">Select a chapter from the left to start reading</div>
       </div>
       <iframe id="pdf-iframe" style="display:none"></iframe>
+      <div id="pdf-gdrive" style="display:none;flex-direction:column;align-items:center;justify-content:center;height:100%;gap:16px;padding:20px;text-align:center">
+        <div style="font-size:48px">&#x1F4D5;</div>
+        <div style="font-size:16px;color:var(--mtw-text-secondary);max-width:400px;line-height:1.6">
+          PDF file is too large (255 MB) to embed in the browser.
+        </div>
+        <a id="gdrive-link" href="#" target="_blank" rel="noopener" style="display:inline-block;padding:12px 28px;background:#F5D742;color:#111;border-radius:8px;text-decoration:none;font-weight:bold;font-size:15px;margin-top:4px">&#x1F4C4; Open PDF in Google Drive</a>
+        <div style="font-size:12px;color:var(--mtw-text-darkest)">Use chapter list on the left to navigate — matching PDF pages are labeled</div>
+      </div>
     </div>
     <div class="pdf-info" id="pdf-info"></div>
   </div>
@@ -193,6 +201,7 @@ function openChapter(ch) {
   document.querySelectorAll('.rch').forEach(function(el){el.classList.toggle('active', parseInt(el.getAttribute('data-ch'))===ch)});
   var r = CH_RANGES[ch];
   var iframe = document.getElementById('pdf-iframe');
+  var gdrive = document.getElementById('pdf-gdrive');
   var placeholder = document.getElementById('pdf-placeholder');
   var info = document.getElementById('pdf-info');
   var toolbar = document.getElementById('reader-toolbar');
@@ -200,19 +209,29 @@ function openChapter(ch) {
 
   var pdfPage = r && r.pdf_start ? r.pdf_start : 1;
   currentPdfPage = pdfPage;
-  // Add cache-busting query param so iframe reloads when #page changes
-  var pdfUrl = PDF_URL + '?ch=' + ch + '#page=' + pdfPage;
 
-  // Show toolbar with chapter label + open button
   toolbar.style.display = 'flex';
   chLabel.textContent = 'Chapter ' + ch;
 
-  // Try iframe embed (works in Firefox, Edge; Chrome blocks local PDF embeds)
-  // Reset src first to force reload when only the anchor differs
+  var isGDrive = PDF_URL.indexOf('drive.google.com') !== -1;
+  if (isGDrive) {
+    iframe.style.display = 'none';
+    placeholder.style.display = 'none';
+    gdrive.style.display = 'flex';
+    document.getElementById('gdrive-link').href = PDF_URL.replace('/preview', '/view');
+    var note = 'Chapter ' + ch;
+    if (r && r.printed_start) { note += ' | Printed pp. ' + r.printed_start + '-' + r.printed_end; }
+    if (r && r.pdf_start) { note += ' | PDF page ' + r.pdf_start; }
+    info.textContent = note;
+    return;
+  }
+
+  var pdfUrl = PDF_URL + '?ch=' + ch + '#page=' + pdfPage;
   iframe.src = '';
   setTimeout(function(){ iframe.src = pdfUrl; }, 50);
   iframe.style.display = 'block';
   placeholder.style.display = 'none';
+  gdrive.style.display = 'none';
 
   var note = 'Chapter ' + ch;
   if (r && r.printed_start) { note += ' | Printed pp. ' + r.printed_start + '-' + r.printed_end; }
@@ -223,9 +242,13 @@ function openChapter(ch) {
 }
 
 function openPdfInTab() {
-  // Use cache-busting anchor; fragment alone works in new tab
-  var pdfUrl = PDF_URL + '#page=' + currentPdfPage;
-  window.open(pdfUrl, '_blank');
+  var isGDrive = PDF_URL.indexOf('drive.google.com') !== -1;
+  if (isGDrive) {
+    window.open(PDF_URL.replace('/preview', '/view'), '_blank');
+  } else {
+    var pdfUrl = PDF_URL + '#page=' + currentPdfPage;
+    window.open(pdfUrl, '_blank');
+  }
 }
 
 function populateSummarySelect() {
