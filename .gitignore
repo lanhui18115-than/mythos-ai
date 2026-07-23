@@ -13,8 +13,6 @@ data/knowledge/
 # 页码映射
 data/page_mapping.json
 
-# 提取的艺术品图片（体积大，从教材生成）
-data/artwork_images/
 
 # LLM API 调用缓存（本地生成）
 data/llm_cache.json

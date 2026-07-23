@@ -22,7 +22,7 @@ DATA_DIR = Path("data")
 KNOWLEDGE_DIR = DATA_DIR / "knowledge"
 OUTPUT_DIR = Path("output")
 OUTPUT_FILE = OUTPUT_DIR / "learning_center.html"
-PDF_PATH = "../textbook/classical_myth.pdf"
+PDF_PATH = "https://drive.google.com/file/d/1OdZEZc1VhcpbHvn8HRPYafJAKzywUCqo/preview"
 
 random.seed(137)
 
