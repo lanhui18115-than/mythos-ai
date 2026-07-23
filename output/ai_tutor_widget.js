@@ -3,7 +3,7 @@
 
   var INDEX_URL = '../data/ai_tutor_index.json';
   var NAME_MAP_URL = '../data/name_map.json';
-  var API_BASE = 'http://localhost:5800';
+ var API_BASE = 'https://mythos-ai-o8kd.onrender.com';
 
   var STOP_WORDS = {
     "what":1,"is":1,"the":1,"of":1,"a":1,"an":1,"in":1,"on":1,"at":1,"to":1,"for":1,
