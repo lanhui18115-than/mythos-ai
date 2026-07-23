@@ -215,13 +215,15 @@ function openChapter(ch) {
 
   var isGDrive = PDF_URL.indexOf('drive.google.com') !== -1;
   if (isGDrive) {
-    iframe.style.display = 'none';
+    iframe.src = '';
+    setTimeout(function(){ iframe.src = PDF_URL; }, 50);
+    iframe.style.display = 'block';
     placeholder.style.display = 'none';
-    gdrive.style.display = 'flex';
-    document.getElementById('gdrive-link').href = PDF_URL.replace('/preview', '/view');
+    gdrive.style.display = 'none';
     var note = 'Chapter ' + ch;
     if (r && r.printed_start) { note += ' | Printed pp. ' + r.printed_start + '-' + r.printed_end; }
     if (r && r.pdf_start) { note += ' | PDF page ' + r.pdf_start; }
+    note += ' | Google Drive embed (page jump not supported)';
     info.textContent = note;
     return;
   }
@@ -244,7 +246,7 @@ function openChapter(ch) {
 function openPdfInTab() {
   var isGDrive = PDF_URL.indexOf('drive.google.com') !== -1;
   if (isGDrive) {
-    window.open(PDF_URL.replace('/preview', '/view'), '_blank');
+    window.open(PDF_URL.replace('/preview', '/view?usp=sharing'), '_blank');
   } else {
     var pdfUrl = PDF_URL + '#page=' + currentPdfPage;
     window.open(pdfUrl, '_blank');
