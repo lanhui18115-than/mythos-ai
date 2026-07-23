@@ -1,0 +1,248 @@
+Total characters with roman_name: 232
+Roman names MISSING as entity: 45
+Roman names WITH entity: 187
+
+======================================================================
+
+=== MISSING Roman entities (need to be created) ===
+
+Greek Name                     Roman Name                    
+------------------------------------------------------------
+Ares                           Mars                          
+Ascanius                       Iulus                         
+Asclepius                      Aesculapius                   
+Atargatis                      Dea Syria                     
+Athena                         Minerva                       
+Bia                            Force                         
+Cronus                         Saturn                        
+Cybele                         Magna Mater                   
+Death                          Mors                          
+Demeter                        Ceres                         
+Dioscuri                       Castor and Pollux             
+Dumuzi                         Tammuz                        
+Eos                            Aurora                        
+Eris                           Discordia                     
+Gaea                           Terra                         
+Ge                             Terra                         
+Graces                         Charites                      
+Hadad                          Jupiter Dolichenus            
+Harmonia                       Concordia                     
+Hecuba                         Hekabe                        
+Helius                         Sol                           
+Hemera                         Day                           
+Hestia                         Vesta                         
+Himeros                        Desire                        
+Horus                          Harpocrates                   
+Hours                          Horae                         
+Humbaba                        Huwawa                        
+Kratos                         Strength                      
+Leto                           Latona                        
+Melicertes                     Palaemon                      
+Moirai                         Fates                         
+Nike                           Victory                       
+Odysseus                       Ulysses                       
+Pallas Athena                  Minerva                       
+Paris                          Alexander                     
+Persephone                     Proserpina                    
+Persuasion                     Suadela                       
+Rhea                           Ops                           
+Seasons                        Horae                         
+Selene                         Luna                          
+Sleep                          Somnus                        
+Stheneboea                     Antea                         
+Sun                            Sol                           
+Teshub                         Tarkhun                       
+Uranus                         Caelus                        
+
+
+=== EXISTING Roman entities (already present) ===
+
+Greek Name                     Roman Name                    
+------------------------------------------------------------
+Zeus                           Jupiter                       
+Heracles                       Hercules                      
+Theseus                        Theseus                       
+Jason                          Jason                         
+Callisto                       Callisto                      
+Antiope                        Antiope                       
+Meleager                       Meleager                      
+Achilles                       Achilles                      
+Aphrodite                      Venus                         
+Apollo                         Apollo                        
+Eros                           Cupid                         
+Artemis                        Diana                         
+Hippolytus                     Hippolytus                    
+Phaedra                        Phaedra                       
+Hylas                          Hylas                         
+Hades                          Pluto                         
+Poseidon                       Neptune                       
+Pelops                         Pelops                        
+Orpheus                        Orpheus                       
+Medea                          Medea                         
+Cupid                          Cupid                         
+Hera                           Juno                          
+Hermes                         Mercury                       
+Eileithyia                     Eileithyia                    
+Dionysus                       Bacchus                       
+Agamemnon                      Agamemnon                     
+Cadmus                         Cadmus                        
+Gaia                           Ge                            
+Nyx                            Night                         
+Coeus                          Coeus                         
+Themis                         Themis                        
+Perses                         Perses                        
+Vulcan                         Vulcan                        
+Jupiter                        Jupiter                       
+Erinyes                        Furies                        
+Prometheus                     Prometheus                    
+Atlas                          Atlas                         
+Aeolus                         Aeolus                        
+Hephaestus                     Vulcan                        
+Argus                          Argus                         
+Lycaon                         Lycaon                        
+Chiron                         Chiron                        
+Thetis                         Thetis                        
+Iris                           Iris                          
+Triton                         Triton                        
+Enki                           Ea                            
+Ea                             Enki                          
+Maia                           Maia                          
+Dione                          Dione                         
+Semele                         Semele                        
+Metis                          Metis                         
+Hebe                           Hebe                          
+Hippodamia                     Hippodamia                    
+Oenomaüs                       Oenomaüs                      
+Pirithoüs                      Pirithoüs                     
+Ixion                          Ixion                         
+Nephele                        Nephele                       
+Centaurus                      Centaurus                     
+Philyra                        Philyra                       
+Caeneus                        Caeneus                       
+Caenis                         Caenis                        
+Mopsus                         Mopsus                        
+Pheidias                       Pheidias                      
+Niobe                          Niobe                         
+Trophonius                     Trophonius                    
+Agamedes                       Agamedes                      
+Erginus                        Erginus                       
+Augeas                         Augeas                        
+Hyrieus                        Hyrieus                       
+Amphiaraüs                     Amphiaraüs                    
+Melampus                       Melampus                      
+Bias                           Bias                          
+Tiresias                       Tiresias                      
+Promeneia                      Promeneia                     
+Timarete                       Timarete                      
+Nicandra                       Nicandra                      
+Ammon                          Ammon                         
+Croesus                        Croesus                       
+Solon                          Solon                         
+Amphitrite                     Amphitrite                    
+Peleus                         Peleus                        
+Tyro                           Tyro                          
+Pelias                         Pelias                        
+Menelaüs                       Menelaus                      
+Hecate                         Hecate                        
+Circe                          Circe                         
+Erechtheus                     Erechtheus                    
+Aegeus                         Aegeus                        
+Pallas                         Pallas                        
+Furies                         Erinyes                       
+Adonis                         Adonis                        
+Actaeon                        Actaeon                       
+Arcas                          Arcas                         
+Orion                          Orion                         
+Arethusa                       Arethusa                      
+Alpheus                        Alpheus                       
+Amazons                        Amazons                       
+Oenopion                       Oenopion                      
+Merope                         Merope                        
+Pleiades                       Pleiades                      
+Sirius                         Sirius                        
+Autonoë                        Autonoë                       
+Aristaeus                      Aristaeus                     
+Amphion                        Amphion                       
+Tantalus                       Tantalus                      
+Asterie                        Asterie                       
+Britomartis                    Britomartis                   
+Opis                           Opis                          
+Pittheus                       Pittheus                      
+Sinis                          Sinis                         
+Sciron                         Sciron                        
+Pleione                        Pleione                       
+Iphigenia                      Iphigenia                     
+Anius                          Anius                         
+Elaïs                          Elaïs                         
+Spermo                         Spermo                        
+Oeno                           Oeno                          
+Pythia                         Pythia                        
+Idas                           Idas                          
+Diana                          Diana                         
+Thanatos                       Death                         
+Typhaon                        Typhon                        
+Argus-slayer                   Mercury                       
+Ino                            Ino                           
+Athamas                        Athamas                       
+Dis                            Pluto                         
+Pluto                          Hades                         
+Sisyphus                       Sisyphus                      
+Necessity                      Ananke                        
+Rhadamanthus                   Rhadamanthys                  
+Eumenides                      Furies                        
+Bacchus                        Dionysus                      
+Night                          Nyx                           
+Kore                           Persephone                    
+Castor                         Castor                        
+Creon                          Creon                         
+Hypsipyle                      Hypsipyle                     
+Opheltes                       Opheltes                      
+Polydeuces                     Pollux                        
+tutor                          Tutor                         
+Lynceus                        Lynceus                       
+Hesione                        Hesione                       
+Telamon                        Telamon                       
+Creusa                         Glauce                        
+Oïleus                         Oïleus                        
+Acastus                        Acastus                       
+Nauplius                       Nauplius                      
+Alcinoüs                       Alcinoüs                      
+Arete                          Arete                         
+Phineus                        Phineus                       
+Apis                           Serapis                       
+Aeëtes                         Aeëtes                        
+Mercury                        Mercury                       
+Periclymenus                   Periclymenus                  
+Zetes                          Zetes                         
+Calaïs                         Calaïs                        
+Pasiphaë                       Pasiphaë                      
+Aeson                          Aeson                         
+Polymede                       Polymede                      
+Phrixus                        Phrixus                       
+Helle                          Helle                         
+Chalciope                      Chalciope                     
+Melas                          Melas                         
+Phrontis                       Phrontis                      
+Cytisorus                      Cytisorus                     
+Cretheus                       Cretheus                      
+Argus (shipwright)             Argus                         
+Idmon                          Idmon                         
+Euphemus                       Euphemus                      
+Tiphys                         Tiphys                        
+Thoas (king of Lemnos)         Thoas                         
+Euneos                         Euneos                        
+Thoas (son of Jason)           Thoas                         
+Lycurgus (king of Nemea)       Lycurgus                      
+Cyzicus                        Cyzicus                       
+Amycus                         Amycus                        
+Lycus (king of Mariandyni)     Lycus                         
+Ancaeus                        Ancaeus                       
+Apsyrtus                       Apsyrtus                      
+Glauce                         Glauce                        
+Medus                          Medus                         
+Aloeus                         Aloeus                        
+Talus                          Talus                         
+Hercules                       Hercules                      
+Arcesilas                      Arcesilas                     
+Nurse                          Nurse                         
+Chorus                         Chorus                        

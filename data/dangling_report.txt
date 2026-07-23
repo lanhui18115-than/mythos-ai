@@ -1,0 +1,198 @@
+Total dangling reference strings: 60
+
+"serpent (dragon)" (4 occurrences)
+  Jason --[fought_against]--> serpent (dragon)  |  Jason (with Medea's help) overcame the serpent guarding the Golden Fleece.
+  Medea --[killed]--> serpent (dragon)  |  In Euripides' version, Medea killed the serpent.
+  Jason --[depicted_in]--> serpent (dragon)  |  Jason is depicted being disgorged by the dragon on the red-figure cup.
+  Athena --[depicted_in]--> serpent (dragon)  |  Athena is depicted watching the dragon disgorge Jason on the red-figure cup.
+
+"serpent" (3 occurrences)
+  Cadmus --[transformed_into]--> serpent  |  Cadmus was turned into a serpent.
+  Harmonia --[transformed_into]--> serpent  |  Harmonia was turned into a serpent.
+  Medea --[killed]--> serpent  |  Medea killed the serpent guarding the Golden Fleece.
+
+"dolphin" (2 occurrences)
+  Arion --[saved]--> dolphin  |  Arion was saved by a dolphin after being thrown overboard.
+  Apollo --[transformed_into]--> dolphin  |  Apollo transformed into a dolphin to guide the Cretan ship.
+
+"flute" (2 occurrences)
+  Athena --[created]--> flute  |  Athena invented the flute but discarded it.
+  Marsyas --[associated_with]--> flute  |  Marsyas picked up the flute after Athena discarded it.
+
+"raven" (2 occurrences)
+  raven --[associated_with]--> Apollo  |  The raven was Apollo's bird and told him of Coronis' infidelity.
+  Apollo --[transformed_into]--> raven  |  Apollo turned the raven from white to black.
+
+"Proetus's daughters" (2 occurrences)
+  Dionysus --[opponent_of]--> Proetus's daughters  |  Dionysus drove the daughters of Proetus mad.
+  Melampus --[cured]--> Proetus's daughters  |  Melampus cured the madness of Proetus's daughters.
+
+"swan" (2 occurrences)
+  Orpheus --[transformed_into]--> swan  |  The soul of Orpheus chose the life of a swan in Plato's myth.
+  Cycnus --[transformed_into]--> swan  |  Cycnus was turned into a swan.
+
+"Humans" (2 occurrences)
+  Humans --[created_by]--> Titans  |  Humans were created from the ashes of the Titans.
+  Humans --[contains]--> Dionysus  |  Humans contain a divine spark from Dionysus because the Titans had consumed him.
+
+"bull" (2 occurrences)
+  Mithras --[killed]--> bull  |  Mithras slayed a bull, from whose blood sprang fertility.
+  Pasiphaë --[lover_of]--> bull  |  Pasiphaë fell in love with the bull sent by Poseidon.
+
+"Iphigenia in Tauris" (2 occurrences)
+  Orestes --[participates_in]--> Iphigenia in Tauris  |  Orestes appears in Euripides' Iphigenia in Tauris.
+  Iphigenia --[participates_in]--> Iphigenia in Tauris  |  Iphigenia is the priestess in Euripides' Iphigenia in Tauris.
+
+"Greeks" (2 occurrences)
+  Apollo --[punished]--> Greeks  |  Apollo sent a plague on the Greeks.
+  Astyanax --[killed]--> Greeks  |  Astyanax was thrown from the city walls by the Greeks.
+
+"Argus (son of Phrixus)" (2 occurrences)
+  Argus (son of Phrixus) --[child_of]--> Phrixus  |  Argus is the son of Phrixus and Chalciope.
+  Argus (son of Phrixus) --[child_of]--> Chalciope  |  Argus is the son of Chalciope.
+
+"her children" (2 occurrences)
+  Medea --[killed]--> her children  |  Medea killed her own children in revenge against Jason.
+  Medea --[parent_of]--> her children  |  Medea is the mother of Jason's children.
+
+"Proserpina" (1 occurrences)
+  Persephone --[roman_equivalent]--> Proserpina  |  Persephone is equivalent to the Roman goddess Proserpina.
+
+"Ceres" (1 occurrences)
+  Demeter --[roman_equivalent]--> Ceres  |  Demeter is equivalent to the Roman goddess Ceres.
+
+"Ulysses" (1 occurrences)
+  Odysseus --[roman_equivalent]--> Ulysses  |  Odysseus is equivalent to the Roman hero Ulysses.
+
+"Saturn" (1 occurrences)
+  Cronus --[roman_equivalent]--> Saturn  |  Cronus is equivalent to the Roman god Saturn.
+
+"Aurora" (1 occurrences)
+  Eos --[roman_equivalent]--> Aurora  |  Eos is equivalent to the Roman goddess Aurora.
+
+"Trojans" (1 occurrences)
+  Apollo --[associated_with]--> Trojans  |  Apollo sided with the Trojans in the Iliad.
+
+"Mountains" (1 occurrences)
+  Gaia --[parent_of]--> Mountains  |  She brought forth the lofty mountain ranges.
+
+"Noah" (1 occurrences)
+  Ut-napishtim --[identified_with]--> Noah  |  Ut-napishtim is a Babylonian parallel to Noah.
+
+"spider" (1 occurrences)
+  Arachne --[transformed_into]--> spider  |  Athena turned Arachne into a spider.
+
+"olive tree" (1 occurrences)
+  Athena --[created_by]--> olive tree  |  Athena created the olive tree in her contest with Poseidon.
+
+"salt spring" (1 occurrences)
+  Poseidon --[created_by]--> salt spring  |  Poseidon created a salt spring (or horse) in his contest with Athena.
+
+"Cretan sailors" (1 occurrences)
+  Apollo --[associated_with]--> Cretan sailors  |  Apollo recruited Cretan sailors as his attendants.
+
+"laurel" (1 occurrences)
+  Daphne --[transformed_into]--> laurel  |  Daphne was transformed into a laurel tree.
+
+"flower" (1 occurrences)
+  Hyacinthus --[transformed_into]--> flower  |  Hyacinthus's blood was transformed into a flower.
+
+"Bernini sculpture" (1 occurrences)
+  Apollo and Daphne --[depicted_in]--> Bernini sculpture  |  Bernini's sculpture depicts the moment of Daphne's metamorphosis.
+
+"stag" (1 occurrences)
+  Cyparissus --[loved_by]--> stag  |  Cyparissus loved his stag and accidentally killed it.
+
+"cypress tree" (1 occurrences)
+  Cyparissus --[transformed_into]--> cypress tree  |  Cyparissus was transformed into a cypress tree.
+
+"Apollo from Olympia" (1 occurrences)
+  Apollo from Olympia --[depicts]--> Apollo  |  The Apollo statue from Olympia depicts the god Apollo.
+
+"Apollo Delphinius vase" (1 occurrences)
+  Apollo Delphinius vase --[depicts]--> Apollo  |  The vase depicts Apollo riding a winged tripod over the sea.
+
+"lyre" (1 occurrences)
+  Hermes --[created_by]--> lyre  |  Hermes invents the lyre from a tortoise shell.
+
+"fire sticks" (1 occurrences)
+  Hermes --[created_by]--> fire sticks  |  Hermes invents fire sticks and fire.
+
+"Apollo's cattle" (1 occurrences)
+  Hermes --[stole]--> Apollo's cattle  |  Hermes steals fifty cows from Apollo's herd.
+
+"nymphs of Nysa" (1 occurrences)
+  Dionysus --[nurtured]--> nymphs of Nysa  |  The nymphs of Nysa nurtured the infant Dionysus.
+
+"Minyas's daughters" (1 occurrences)
+  Dionysus --[opponent_of]--> Minyas's daughters  |  Dionysus drove the daughters of Minyas mad.
+
+"pirates" (1 occurrences)
+  Dionysus --[opponent_of]--> pirates  |  Dionysus transformed pirates into dolphins.
+
+"helmsman" (1 occurrences)
+  Dionysus --[saved]--> helmsman  |  Dionysus saved the helmsman who recognized him as a god.
+
+"pomegranate" (1 occurrences)
+  Persephone --[devoured]--> pomegranate  |  Persephone eats pomegranate seeds in the underworld, binding her to Hades.
+
+"humanity" (1 occurrences)
+  Demeter --[caused_famine]--> humanity  |  Demeter causes a famine by withholding crops.
+
+"Earth" (1 occurrences)
+  Tityus --[child_of]--> Earth  |  Tityus is the son of revered Earth (Gaia).
+
+"Armenius" (1 occurrences)
+  Er --[child_of]--> Armenius  |  Er is the son of Armenius.
+
+"lion" (1 occurrences)
+  Ajax --[transformed_into]--> lion  |  The soul of Ajax chose the life of a lion.
+
+"eagle" (1 occurrences)
+  Agamemnon --[transformed_into]--> eagle  |  The soul of Agamemnon changed to the life of an eagle.
+
+"male athlete" (1 occurrences)
+  Atalanta --[transformed_into]--> male athlete  |  The soul of Atalanta chose the life of a male athlete.
+
+"craftswoman" (1 occurrences)
+  Epeus --[transformed_into]--> craftswoman  |  The soul of Epeus assumed the nature of a craftswoman.
+
+"ape" (1 occurrences)
+  Thersites --[transformed_into]--> ape  |  The soul of Thersites took the form of an ape.
+
+"quiet life of an ordinary man" (1 occurrences)
+  Odysseus --[transformed_into]--> quiet life of an ordinary man  |  The soul of Odysseus chose the quiet life of an ordinary man.
+
+"Sychaeus" (1 occurrences)
+  Dido --[spouse_of]--> Sychaeus  |  Dido joins the shade of her former husband Sychaeus.
+
+"Centaurs" (1 occurrences)
+  Centaurus --[parent_of]--> Centaurs  |  Centaurus mated with mares to produce the Centaurs.
+
+"Republic" (1 occurrences)
+  Plato --[author_of]--> Republic  |  Plato wrote the Republic, which includes the myth of Er.
+
+"snake" (1 occurrences)
+  Eurydice --[killed]--> snake  |  Eurydice was bitten on the ankle by a serpent and died.
+
+"Ciconian women" (1 occurrences)
+  Orpheus --[killed]--> Ciconian women  |  Ciconian women, followers of Dionysus, tore Orpheus apart.
+
+"Seth" (1 occurrences)
+  Osiris --[killed]--> Seth  |  Osiris was dismembered by Seth.
+
+"Ajax the Locrian" (1 occurrences)
+  Ajax the Locrian --[associated_with]--> Cassandra  |  Ajax the Locrian drags Cassandra from Athena's temple.
+
+"boar" (1 occurrences)
+  Idmon --[killed]--> boar  |  Idmon was killed by a boar in the land of the Mariandyni.
+
+"fire-breathing bulls" (1 occurrences)
+  Jason --[fought_against]--> fire-breathing bulls  |  Jason yoked the fire-breathing bulls as one of his tasks.
+
+"armed men (dragon's teeth)" (1 occurrences)
+  Jason --[fought_against]--> armed men (dragon's teeth)  |  Jason defeated the armed men that sprang from the dragon's teeth.
+
+"his children" (1 occurrences)
+  Jason --[parent_of]--> his children  |  Jason is the father of Medea's children.
+

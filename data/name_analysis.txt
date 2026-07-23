@@ -1,0 +1,75 @@
+﻿=== Non-ASCII character names (69 total) ===
+Acheloüs
+Aeëtes
+Aërope
+Ageläus
+Ajax the Locrian (son of Oïleus)
+Alcinoüs
+Amphiaraüs
+Amphiaraüs as Healer
+Antinoüs
+Artemis as Mistress of Animals (Potnia Theron) (François Vase handle)
+Autonoë
+Beroë
+Briseïs
+Calaïs
+Callirhoë
+Callithoë
+Chryseïs
+Clytië
+Cranaë
+Danaë
+Danaë and the Brazen Tower
+Danaë and the Chest
+Danaï
+Danaüs
+Deïanira
+Deïdamia
+Deïphobus
+Demeter and Demophoön
+Demophoön
+Duel of Menelaüs and Paris
+Eëtion
+Elaïs
+Eurybië
+Euryphaëssa
+Francesco Zurbarán
+Gargaphië
+Helius and Leucothoë
+Heracles and Deïanira
+Hippocoön
+Iolaüs
+Iphinoë
+Laërtes
+Laocoön
+Las Hilanderas (The Weavers) by Velázquez
+Leucothoë
+Menelaüs
+Mercury and Argus (by Diego Velázquez)
+Mt. Taÿgetus
+Nausicaä
+Ocyrhoë
+Odysseus and Nausicaä
+Oenomaüs
+Oïleus
+Pasiphaë
+Phaëthon
+Phaëthon
+Phemonoë
+Pirithoüs
+Protesilaüs
+Protesilaüs and Laodamia
+Proteus and Menelaüs
+Pterelaüs
+Return of Menelaüs
+Taÿgete
+The Chariot Race of Pelops and Oenomaüs
+The Daughters of Danaüs
+The François Vase
+Theseus and Pirithoüs
+Troïlus
+
+=== Literal question marks in names ===
+
+=== Replacement chars U+FFFD in names ===
+

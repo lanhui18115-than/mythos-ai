@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mythos AI — 首页</title>
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family:'Segoe UI',sans-serif; background:#0a0a1a; color:#eee; min-height:100vh; }
+  .container { max-width:1100px; margin:0 auto; padding:30px 20px; }
+  
+  /* Header */
+  header { text-align:center; margin-bottom:40px; }
+  header h1 { color:#F5D742; font-size:32px; letter-spacing:2px; }
+  header .subtitle { color:#666; font-size:14px; margin-top:6px; }
+  header .tagline { color:#444; font-size:12px; margin-top:4px; }
+  
+  /* Stats */
+  .stats-grid { display:flex; gap:8px; justify-content:center; flex-wrap:wrap; margin-bottom:40px; }
+  .stat-item { background:#111128; border:1px solid #2a2a4a; border-radius:8px; padding:12px 20px; text-align:center; min-width:80px; }
+  .stat-n { display:block; font-size:22px; font-weight:bold; color:#F5D742; }
+  .stat-l { display:block; font-size:11px; color:#888; margin-top:2px; }
+  
+  /* Cards */
+  .card-grid { display:grid; grid-template-columns:repeat(auto-fill, minmax(420px, 1fr)); gap:16px; }
+  .card { display:flex; flex-direction:column; background:#111128; border:1px solid #2a2a4a; border-radius:12px; padding:0; text-decoration:none; color:#eee; transition:all 0.2s; overflow:hidden; }
+  .card:hover { border-color:#F5D742; transform:translateY(-2px); box-shadow:0 8px 24px rgba(245,215,66,0.08); }
+  .card.missing { opacity:0.6; border-color:#333; }
+  .card.missing:hover { opacity:0.8; border-color:#555; transform:none; box-shadow:none; }
+  
+  .card-header { display:flex; align-items:center; gap:12px; padding:16px 20px; background:rgba(255,255,255,0.02); border-bottom:1px solid #1a1a3e; }
+  .card-icon { font-size:28px; width:40px; height:40px; display:flex; align-items:center; justify-content:center; border-radius:8px; background:#1a1a3e; flex-shrink:0; }
+  .icon-learning::before { content:"📚"; }
+  .icon-index::before { content:"📖"; }
+  .icon-tree::before { content:"🌳"; }
+  .icon-quiz::before { content:"📝"; }
+  .icon-crossword::before { content:"🧩"; }
+  .icon-artwork::before { content:"🎨"; }
+  .card-title { font-size:18px; font-weight:bold; color:#eee; }
+  .card-sub { font-size:11px; color:#666; }
+  .status-badge { margin-left:auto; padding:3px 10px; border-radius:10px; font-size:10px; text-transform:uppercase; letter-spacing:1px; }
+  .status-badge.ready { background:rgba(46,204,113,0.15); color:#2ecc71; border:1px solid rgba(46,204,113,0.3); }
+  .status-badge.missing { background:rgba(231,76,60,0.15); color:#e74c3c; border:1px solid rgba(231,76,60,0.3); }
+  
+  .card-body { padding:16px 20px; flex:1; }
+  .card-body p { font-size:13px; color:#999; line-height:1.6; }
+  .features { display:flex; flex-wrap:wrap; gap:4px; margin-top:10px; }
+  .feat { padding:2px 8px; border-radius:3px; font-size:10px; color:#555; background:#0e0e2a; border:1px solid #1a1a3e; }
+  
+  .card-footer { display:flex; justify-content:space-between; padding:10px 20px; background:rgba(0,0,0,0.15); border-top:1px solid #1a1a3e; font-size:10px; color:#444; }
+  
+  /* Regenerate section */
+  .tool-section { margin-top:40px; padding:20px; background:#111128; border:1px solid #2a2a4a; border-radius:12px; }
+  .tool-section h2 { color:#F5D742; font-size:18px; margin-bottom:8px; }
+  .tool-section p { font-size:13px; color:#888; margin-bottom:12px; }
+  .tool-section button { padding:10px 20px; border:1px solid #F5D742; background:transparent; color:#F5D742; border-radius:6px; cursor:pointer; font-size:13px; margin-right:8px; margin-bottom:8px; }
+  .tool-section button:hover { background:#F5D742; color:#111; }
+  .tool-section .log { margin-top:12px; padding:12px; background:#0e0e2a; border:1px solid #1a1a3e; border-radius:6px; font-size:12px; color:#666; font-family:monospace; max-height:200px; overflow-y:auto; }
+  
+  /* Book info */
+  .book-info { margin-top:16px; padding:14px 20px; background:rgba(245,215,66,0.03); border:1px solid rgba(245,215,66,0.1); border-radius:8px; font-size:12px; color:#666; text-align:center; }
+  .book-info strong { color:#F5D742; }
+
+  ::-webkit-scrollbar { width:5px; }
+  ::-webkit-scrollbar-track { background:#111128; }
+  ::-webkit-scrollbar-thumb { background:#333; border-radius:3px; }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <header>
+    <h1>Mythos AI</h1>
+    <div class="subtitle">Textbook-Grounded Learning Platform for Classical Mythology · 首页</div>
+    <div class="tagline">Morford · Lenardon · Sham · Oxford University Press</div>
+  </header>
+
+  <div class="stats-grid">
+        <div class="stat-item"><span class="stat-n">24</span><span class="stat-l">章</span></div>
+        <div class="stat-item"><span class="stat-n">1010</span><span class="stat-l">人物</span></div>
+        <div class="stat-item"><span class="stat-n">402</span><span class="stat-l">神话</span></div>
+        <div class="stat-item"><span class="stat-n">390</span><span class="stat-l">地点</span></div>
+        <div class="stat-item"><span class="stat-n">433</span><span class="stat-l">概念</span></div>
+        <div class="stat-item"><span class="stat-n">206</span><span class="stat-l">艺术品</span></div>
+        <div class="stat-item"><span class="stat-n">3340</span><span class="stat-l">关系</span></div>
+  </div>
+
+  <div class="card-grid">
+    
+        <a class="card ready" href="learning_center.html" target="_blank">
+            <div class="card-header">
+                <span class="card-icon icon-learning"></span>
+                <div>
+                    <div class="card-title">学习中心</div>
+                    <div class="card-sub">Learning Center</div>
+                </div>
+                <span class="status-badge ready">ready</span>
+            </div>
+            <div class="card-body">
+                <p>教材阅读与学习中心。在线阅读各章节摘要、浏览角色与神话列表、完成章节测验。内置PDF阅读器可直接查看教材原文。</p>
+                <div class="features"><span class="feat">章节选择</span><span class="feat">PDF阅读器</span><span class="feat">章节摘要</span><span class="feat">角色列表</span><span class="feat">章节测验</span></div>
+            </div>
+            <div class="card-footer">
+                <span class="file-info">learning_center.html (489 KB)</span>
+                <span class="script-info">脚本: 13_learning_center.py</span>
+            </div>
+        </a>
+        <a class="card ready" href="character_index.html" target="_blank">
+            <div class="card-header">
+                <span class="card-icon icon-index"></span>
+                <div>
+                    <div class="card-title">角色索引</div>
+                    <div class="card-sub">Character Index</div>
+                </div>
+                <span class="status-badge ready">ready</span>
+            </div>
+            <div class="card-body">
+                <p>希腊罗马神话角色大全，支持搜索、分类浏览。每个角色包含希腊名/罗马名、异体拼名、称号、家族关系、相关神话与艺术品。</p>
+                <div class="features"><span class="feat">搜索角色</span><span class="feat">按类型筛选</span><span class="feat">家族关系</span><span class="feat">神话摘要</span><span class="feat">艺术品图片</span><span class="feat">教材出处</span></div>
+            </div>
+            <div class="card-footer">
+                <span class="file-info">character_index.html (4671 KB)</span>
+                <span class="script-info">脚本: 12_character_index.py</span>
+            </div>
+        </a>
+        <a class="card ready" href="family_tree.html" target="_blank">
+            <div class="card-header">
+                <span class="card-icon icon-tree"></span>
+                <div>
+                    <div class="card-title">家族树</div>
+                    <div class="card-sub">Family Tree</div>
+                </div>
+                <span class="status-badge ready">ready</span>
+            </div>
+            <div class="card-body">
+                <p>交互式家族关系图谱，展示神祇、英雄、凡人之间的父母、配偶、子女、情人关系。支持搜索和分类浏览。</p>
+                <div class="features"><span class="feat">按类型分类浏览</span><span class="feat">搜索角色</span><span class="feat">父母/配偶/子女/孙辈关系</span><span class="feat">证据来源标注</span></div>
+            </div>
+            <div class="card-footer">
+                <span class="file-info">family_tree.html (387 KB)</span>
+                <span class="script-info">脚本: 04_family_tree.py</span>
+            </div>
+        </a>
+        <a class="card ready" href="quiz.html" target="_blank">
+            <div class="card-header">
+                <span class="card-icon icon-quiz"></span>
+                <div>
+                    <div class="card-title">知识测验</div>
+                    <div class="card-sub">Quiz</div>
+                </div>
+                <span class="status-badge ready">ready</span>
+            </div>
+            <div class="card-body">
+                <p>基于教材的多题型知识测验，包括选择题、判断题、匹配题和简答题。所有题目均来自知识图谱中的可靠信息。</p>
+                <div class="features"><span class="feat">选择题</span><span class="feat">判断题</span><span class="feat">匹配题</span><span class="feat">简答题</span><span class="feat">教材出处标注</span></div>
+            </div>
+            <div class="card-footer">
+                <span class="file-info">quiz.html (23 KB)</span>
+                <span class="script-info">脚本: 05_quiz_generator.py</span>
+            </div>
+        </a>
+        <a class="card ready" href="crossword.html" target="_blank">
+            <div class="card-header">
+                <span class="card-icon icon-crossword"></span>
+                <div>
+                    <div class="card-title">填字游戏</div>
+                    <div class="card-sub">Crossword</div>
+                </div>
+                <span class="status-badge ready">ready</span>
+            </div>
+            <div class="card-body">
+                <p>基于神话角色名、罗马名、称号和地点的填字游戏。线索均关联教材内容，寓教于乐。</p>
+                <div class="features"><span class="feat">自动生成网格</span><span class="feat">键盘导航</span><span class="feat">检查答案</span><span class="feat">提示功能</span></div>
+            </div>
+            <div class="card-footer">
+                <span class="file-info">crossword.html (35 KB)</span>
+                <span class="script-info">脚本: 06_crossword_generator.py</span>
+            </div>
+        </a>
+        <a class="card ready" href="artwork_quiz.html" target="_blank">
+            <div class="card-header">
+                <span class="card-icon icon-artwork"></span>
+                <div>
+                    <div class="card-title">艺术品识别</div>
+                    <div class="card-sub">Artwork Identification</div>
+                </div>
+                <span class="status-badge ready">ready</span>
+            </div>
+            <div class="card-body">
+                <p>基于教材中描述的艺术品，识别其中描绘的角色、故事类型和象征意义。连接视觉艺术与文学知识。</p>
+                <div class="features"><span class="feat">角色识别</span><span class="feat">类型判断</span><span class="feat">描述匹配</span><span class="feat">出处追溯</span></div>
+            </div>
+            <div class="card-footer">
+                <span class="file-info">artwork_quiz.html (221 KB)</span>
+                <span class="script-info">脚本: 07_artwork_quiz.py</span>
+            </div>
+        </a>
+  </div>
+
+  <div class="tool-section">
+    <h2>重新生成学习活动</h2>
+    <p>如果修改了知识图谱或需要刷新题目，可以点击下方按钮重新生成各模块内容。</p>
+    <button onclick="runScript('04_family_tree.py')">重新生成家族树</button>
+    <button onclick="runScript('05_quiz_generator.py')">重新生成测验</button>
+    <button onclick="runScript('06_crossword_generator.py')">重新生成填字游戏</button>
+    <button onclick="runScript('07_artwork_quiz.py')">重新生成艺术品测验</button>
+    <button onclick="runAll()">全部重新生成</button>
+    <div class="log" id="log">就绪</div>
+  </div>
+
+  <div class="book-info">
+    <strong>Knowledge Source:</strong> Classical Mythology &mdash; Morford, Lenardon, Sham (11th Edition) &middot; Oxford University Press &middot; All learning content derived exclusively from this textbook.
+  </div>
+
+</div>
+
+<script>
+function appendLog(msg) {
+  var log = document.getElementById('log');
+  var time = new Date().toLocaleTimeString();
+  log.textContent = '[' + time + '] ' + msg + '\n' + log.textContent;
+}
+
+function runScript(name) {
+  appendLog('Running ' + name + '...');
+  var log = document.getElementById('log');
+  log.textContent = 'Running ' + name + '... (see console for details)\n' + log.textContent;
+  
+  fetch('/run?script=' + name)
+    .then(function(r) { return r.text(); })
+    .then(function(text) {
+      appendLog(name + ' done: ' + text.slice(0, 100));
+      setTimeout(function() { window.location.reload(); }, 1000);
+    })
+    .catch(function(err) {
+      appendLog('Error: ' + err);
+    });
+}
+
+function runAll() {
+  var scripts = ['04_family_tree.py', '05_quiz_generator.py', '06_crossword_generator.py', '07_artwork_quiz.py'];
+  var idx = 0;
+  function next() {
+    if (idx >= scripts.length) {
+      appendLog('All done! Reloading...');
+      setTimeout(function() { window.location.reload(); }, 1000);
+      return;
+    }
+    runScript(scripts[idx]);
+    idx++;
+    setTimeout(next, 2000);
+  }
+  next();
+}
+</script>
+<script src="ai_tutor_widget.js"></script>
+</body>
+</html>

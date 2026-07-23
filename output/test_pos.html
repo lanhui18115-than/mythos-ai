@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<style>body{margin:0;background:#111}#net{width:800px;height:400px;margin:20px auto}</style>
+</head><body>
+<div id="net"></div>
+<script src="vis-network.min.js"></script>
+<script>
+var nodes = [
+  {id:"Cronus", label:"Cronus", x:-150, y:250, color:"#D35400", shape:"dot", size:30},
+  {id:"cp", label:"⚤", x:0, y:250, color:"#888", shape:"diamond", size:22},
+  {id:"Rhea", label:"Rhea", x:150, y:250, color:"#D35400", shape:"dot", size:30},
+  {id:"Zeus", label:"Zeus", x:-80, y:480, color:"#F5D742", shape:"dot", size:18},
+  {id:"Hera", label:"Hera", x:80, y:480, color:"#F5D742", shape:"dot", size:18}
+];
+var edges = [
+  {from:"Cronus", to:"cp", label:"配偶", color:"#e74c3c", width:2},
+  {from:"cp", to:"Rhea", color:"#666", width:2},
+  {from:"cp", to:"Zeus", label:"子", color:"#2ecc71", width:2},
+  {from:"cp", to:"Hera", label:"子", color:"#2ecc71", width:2}
+];
+var container = document.getElementById("net");
+net = new vis.Network(container,
+  {nodes:new vis.DataSet(nodes), edges:new vis.DataSet(edges)},
+  {layout:{improvedLayout:false}, physics:false, autoResize:true}
+);
+net.fit();
+</script>
+</body></html>

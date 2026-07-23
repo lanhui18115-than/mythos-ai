@@ -1,0 +1,353 @@
+{
+  "ART_0001": [
+    "data\\artwork_images\\ART_0001_0.jpg"
+  ],
+  "ART_0005": [
+    "data\\artwork_images\\ART_0005_0.jpg"
+  ],
+  "ART_0006": [
+    "data\\artwork_images\\ART_0006_0.jpg"
+  ],
+  "ART_0007": [
+    "data\\artwork_images\\ART_0007_0.jpg"
+  ],
+  "ART_0010": [
+    "data\\artwork_images\\ART_0010_0.jpg"
+  ],
+  "ART_0012": [
+    "data\\artwork_images\\ART_0012_0.jpg",
+    "data\\artwork_images\\ART_0012_1.jpg",
+    "data\\artwork_images\\ART_0012_2.jpg"
+  ],
+  "ART_0013": [
+    "data\\artwork_images\\ART_0013_0.jpg",
+    "data\\artwork_images\\ART_0013_1.jpg",
+    "data\\artwork_images\\ART_0013_2.jpg"
+  ],
+  "ART_0016": [
+    "data\\artwork_images\\ART_0016_0.jpg"
+  ],
+  "ART_0017": [
+    "data\\artwork_images\\ART_0017_0.jpg"
+  ],
+  "ART_0021": [
+    "data\\artwork_images\\ART_0021_0.jpg",
+    "data\\artwork_images\\ART_0021_1.jpg",
+    "data\\artwork_images\\ART_0021_2.jpg"
+  ],
+  "ART_0024": [
+    "data\\artwork_images\\ART_0024_0.jpg"
+  ],
+  "ART_0026": [
+    "data\\artwork_images\\ART_0026_0.jpg"
+  ],
+  "ART_0030": [
+    "data\\artwork_images\\ART_0030_0.jpg"
+  ],
+  "ART_0032": [
+    "data\\artwork_images\\ART_0032_0.jpg"
+  ],
+  "ART_0035": [
+    "data\\artwork_images\\ART_0035_0.jpg"
+  ],
+  "ART_0036": [
+    "data\\artwork_images\\ART_0036_0.jpg"
+  ],
+  "ART_0038": [
+    "data\\artwork_images\\ART_0038_0.jpg"
+  ],
+  "ART_0041": [
+    "data\\artwork_images\\ART_0041_0.jpg"
+  ],
+  "ART_0042": [
+    "data\\artwork_images\\ART_0042_0.jpg"
+  ],
+  "ART_0043": [
+    "data\\artwork_images\\ART_0043_0.jpg"
+  ],
+  "ART_0044": [
+    "data\\artwork_images\\ART_0044_0.jpg",
+    "data\\artwork_images\\ART_0044_1.jpg",
+    "data\\artwork_images\\ART_0044_2.jpg"
+  ],
+  "ART_0047": [
+    "data\\artwork_images\\ART_0047_0.jpg"
+  ],
+  "ART_0048": [
+    "data\\artwork_images\\ART_0048_0.jpg",
+    "data\\artwork_images\\ART_0048_1.jpg",
+    "data\\artwork_images\\ART_0048_2.jpg"
+  ],
+  "ART_0054": [
+    "data\\artwork_images\\ART_0054_0.jpg"
+  ],
+  "ART_0055": [
+    "data\\artwork_images\\ART_0055_0.jpg",
+    "data\\artwork_images\\ART_0055_1.jpg",
+    "data\\artwork_images\\ART_0055_2.jpg"
+  ],
+  "ART_0056": [
+    "data\\artwork_images\\ART_0056_0.jpg"
+  ],
+  "ART_0060": [
+    "data\\artwork_images\\ART_0060_0.jpg"
+  ],
+  "ART_0064": [
+    "data\\artwork_images\\ART_0064_0.jpg",
+    "data\\artwork_images\\ART_0064_1.jpg",
+    "data\\artwork_images\\ART_0064_2.jpg"
+  ],
+  "ART_0067": [
+    "data\\artwork_images\\ART_0067_0.jpg"
+  ],
+  "ART_0068": [
+    "data\\artwork_images\\ART_0068_0.jpg"
+  ],
+  "ART_0071": [
+    "data\\artwork_images\\ART_0071_0.jpg"
+  ],
+  "ART_0076": [
+    "data\\artwork_images\\ART_0076_0.jpg"
+  ],
+  "ART_0078": [
+    "data\\artwork_images\\ART_0078_0.jpg"
+  ],
+  "ART_0080": [
+    "data\\artwork_images\\ART_0080_0.jpg"
+  ],
+  "ART_0081": [
+    "data\\artwork_images\\ART_0081_0.jpg"
+  ],
+  "ART_0082": [
+    "data\\artwork_images\\ART_0082_0.jpg"
+  ],
+  "ART_0083": [
+    "data\\artwork_images\\ART_0083_0.jpg",
+    "data\\artwork_images\\ART_0083_1.jpg",
+    "data\\artwork_images\\ART_0083_2.jpg"
+  ],
+  "ART_0085": [
+    "data\\artwork_images\\ART_0085_0.jpg"
+  ],
+  "ART_0088": [
+    "data\\artwork_images\\ART_0088_0.jpg",
+    "data\\artwork_images\\ART_0088_1.jpg"
+  ],
+  "ART_0089": [
+    "data\\artwork_images\\ART_0089_0.jpg"
+  ],
+  "ART_0090": [
+    "data\\artwork_images\\ART_0090_0.jpg"
+  ],
+  "ART_0091": [
+    "data\\artwork_images\\ART_0091_0.jpg",
+    "data\\artwork_images\\ART_0091_1.jpg"
+  ],
+  "ART_0093": [
+    "data\\artwork_images\\ART_0093_0.jpg",
+    "data\\artwork_images\\ART_0093_1.jpg"
+  ],
+  "ART_0095": [
+    "data\\artwork_images\\ART_0095_0.jpg"
+  ],
+  "ART_0096": [
+    "data\\artwork_images\\ART_0096_0.jpg"
+  ],
+  "ART_0097": [
+    "data\\artwork_images\\ART_0097_0.jpg"
+  ],
+  "ART_0098": [
+    "data\\artwork_images\\ART_0098_0.jpg"
+  ],
+  "ART_0100": [
+    "data\\artwork_images\\ART_0100_0.jpg"
+  ],
+  "ART_0105": [
+    "data\\artwork_images\\ART_0105_0.jpg"
+  ],
+  "ART_0106": [
+    "data\\artwork_images\\ART_0106_0.jpg"
+  ],
+  "ART_0107": [
+    "data\\artwork_images\\ART_0107_0.jpg"
+  ],
+  "ART_0108": [
+    "data\\artwork_images\\ART_0108_0.jpg"
+  ],
+  "ART_0110": [
+    "data\\artwork_images\\ART_0110_0.jpg"
+  ],
+  "ART_0114": [
+    "data\\artwork_images\\ART_0114_0.jpg",
+    "data\\artwork_images\\ART_0114_1.jpg",
+    "data\\artwork_images\\ART_0114_2.jpg"
+  ],
+  "ART_0120": [
+    "data\\artwork_images\\ART_0120_0.jpg"
+  ],
+  "ART_0121": [
+    "data\\artwork_images\\ART_0121_0.jpg"
+  ],
+  "ART_0123": [
+    "data\\artwork_images\\ART_0123_0.jpg"
+  ],
+  "ART_0124": [
+    "data\\artwork_images\\ART_0124_0.jpg"
+  ],
+  "ART_0125": [
+    "data\\artwork_images\\ART_0125_0.jpg"
+  ],
+  "ART_0126": [
+    "data\\artwork_images\\ART_0126_0.jpg"
+  ],
+  "ART_0129": [
+    "data\\artwork_images\\ART_0129_0.jpg",
+    "data\\artwork_images\\ART_0129_1.jpg",
+    "data\\artwork_images\\ART_0129_2.jpg"
+  ],
+  "ART_0132": [
+    "data\\artwork_images\\ART_0132_0.jpg"
+  ],
+  "ART_0136": [
+    "data\\artwork_images\\ART_0136_0.jpg"
+  ],
+  "ART_0139": [
+    "data\\artwork_images\\ART_0139_0.jpg"
+  ],
+  "ART_0140": [
+    "data\\artwork_images\\ART_0140_0.jpg"
+  ],
+  "ART_0141": [
+    "data\\artwork_images\\ART_0141_0.jpg"
+  ],
+  "ART_0142": [
+    "data\\artwork_images\\ART_0142_0.jpg"
+  ],
+  "ART_0145": [
+    "data\\artwork_images\\ART_0145_0.jpg"
+  ],
+  "ART_0146": [
+    "data\\artwork_images\\ART_0146_0.jpg"
+  ],
+  "ART_0147": [
+    "data\\artwork_images\\ART_0147_0.jpg"
+  ],
+  "ART_0148": [
+    "data\\artwork_images\\ART_0148_0.jpg"
+  ],
+  "ART_0149": [
+    "data\\artwork_images\\ART_0149_0.jpg"
+  ],
+  "ART_0150": [
+    "data\\artwork_images\\ART_0150_0.jpg"
+  ],
+  "ART_0155": [
+    "data\\artwork_images\\ART_0155_0.jpg"
+  ],
+  "ART_0156": [
+    "data\\artwork_images\\ART_0156_0.jpg",
+    "data\\artwork_images\\ART_0156_1.jpg"
+  ],
+  "ART_0157": [
+    "data\\artwork_images\\ART_0157_0.jpg"
+  ],
+  "ART_0158": [
+    "data\\artwork_images\\ART_0158_0.jpg"
+  ],
+  "ART_0159": [
+    "data\\artwork_images\\ART_0159_0.jpg",
+    "data\\artwork_images\\ART_0159_1.jpg"
+  ],
+  "ART_0161": [
+    "data\\artwork_images\\ART_0161_0.jpg"
+  ],
+  "ART_0162": [
+    "data\\artwork_images\\ART_0162_0.jpg"
+  ],
+  "ART_0163": [
+    "data\\artwork_images\\ART_0163_0.jpg"
+  ],
+  "ART_0164": [
+    "data\\artwork_images\\ART_0164_0.jpg"
+  ],
+  "ART_0165": [
+    "data\\artwork_images\\ART_0165_0.jpg",
+    "data\\artwork_images\\ART_0165_1.jpg",
+    "data\\artwork_images\\ART_0165_2.jpg"
+  ],
+  "ART_0168": [
+    "data\\artwork_images\\ART_0168_0.jpg"
+  ],
+  "ART_0169": [
+    "data\\artwork_images\\ART_0169_0.jpg"
+  ],
+  "ART_0170": [
+    "data\\artwork_images\\ART_0170_0.jpg"
+  ],
+  "ART_0171": [
+    "data\\artwork_images\\ART_0171_0.jpg"
+  ],
+  "ART_0172": [
+    "data\\artwork_images\\ART_0172_0.jpg"
+  ],
+  "ART_0173": [
+    "data\\artwork_images\\ART_0173_0.jpg"
+  ],
+  "ART_0174": [
+    "data\\artwork_images\\ART_0174_0.jpg"
+  ],
+  "ART_0175": [
+    "data\\artwork_images\\ART_0175_0.jpg"
+  ],
+  "ART_0176": [
+    "data\\artwork_images\\ART_0176_0.jpg"
+  ],
+  "ART_0178": [
+    "data\\artwork_images\\ART_0178_0.jpg"
+  ],
+  "ART_0180": [
+    "data\\artwork_images\\ART_0180_0.jpg",
+    "data\\artwork_images\\ART_0180_1.jpg",
+    "data\\artwork_images\\ART_0180_2.jpg"
+  ],
+  "ART_0181": [
+    "data\\artwork_images\\ART_0181_0.jpg"
+  ],
+  "ART_0182": [
+    "data\\artwork_images\\ART_0182_0.jpg"
+  ],
+  "ART_0188": [
+    "data\\artwork_images\\ART_0188_0.jpg"
+  ],
+  "ART_0190": [
+    "data\\artwork_images\\ART_0190_0.jpg"
+  ],
+  "ART_0191": [
+    "data\\artwork_images\\ART_0191_0.jpg"
+  ],
+  "ART_0192": [
+    "data\\artwork_images\\ART_0192_0.jpg"
+  ],
+  "ART_0194": [
+    "data\\artwork_images\\ART_0194_0.jpg"
+  ],
+  "ART_0195": [
+    "data\\artwork_images\\ART_0195_0.jpg"
+  ],
+  "ART_0196": [
+    "data\\artwork_images\\ART_0196_0.jpg"
+  ],
+  "ART_0197": [
+    "data\\artwork_images\\ART_0197_0.jpg",
+    "data\\artwork_images\\ART_0197_1.jpg"
+  ],
+  "ART_0200": [
+    "data\\artwork_images\\ART_0200_0.jpg"
+  ],
+  "ART_0201": [
+    "data\\artwork_images\\ART_0201_0.jpg"
+  ],
+  "ART_0205": [
+    "data\\artwork_images\\ART_0205_0.jpg"
+  ]
+}

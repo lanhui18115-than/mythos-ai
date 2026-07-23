@@ -1,0 +1,1346 @@
+{
+  "ART_0001": {
+    "description": "This faience figurine depicts a Minoan Snake Goddess. She stands frontally, holding a snake in each outstretched hand while a small feline sits atop her elaborate headdress. She wears a traditional Minoan costume consisting of a tight bodice, exposed breasts, and a tiered, flounced skirt.",
+    "figures_found": [],
+    "validation_issues": [],
+    "image_used": "data\\artwork_images\\ART_0001_0.jpg"
+  },
+  "ART_0005": {
+    "description": "This illustration depicts a Minoan-style palace interior featuring a central hearth, decorative frescoes of griffins and deer, and figures in loincloths. No specific mythological figures are identifiable. The scene shows inhabitants gathered in a grand hall with ornate, patterned ceilings.",
+    "figures_found": [],
+    "validation_issues": [],
+    "image_used": "data\\artwork_images\\ART_0005_0.jpg"
+  },
+  "ART_0006": {
+    "description": "This image depicts an aerial view of an ancient fortified city, likely a reconstruction of a Bronze Age citadel like Mycenae. No specific mythological figures are present in this architectural illustration. The scene shows a dense urban settlement surrounding a central, walled palace complex.",
+    "figures_found": [],
+    "validation_issues": [],
+    "image_used": "data\\artwork_images\\ART_0006_0.jpg"
+  },
+  "ART_0007": {
+    "description": "This image depicts an aerial view of an ancient fortified city, likely a reconstruction of a Bronze Age citadel like Mycenae. No specific mythological figures are present in this architectural illustration. The scene shows a dense urban settlement surrounding a central, walled palace complex.",
+    "figures_found": [],
+    "validation_issues": [],
+    "image_used": "data\\artwork_images\\ART_0007_0.jpg"
+  },
+  "ART_0010": {
+    "description": "This Roman sarcophagus depicts the myth of Selene and Endymion. Selene, the moon goddess, descends from her chariot to visit the sleeping shepherd Endymion, surrounded by Erotes and lions. Key attributes include the crescent moon on Selene’s head, her chariot, and the sleeping Endymion.",
+    "figures_found": [
+      "Endymion",
+      "Selene"
+    ],
+    "validation_issues": [
+      "HALLUCINATION_RISK: Gemini mentions \"Endymion\" but KG depicts (none in KG)",
+      "HALLUCINATION_RISK: Gemini mentions \"Selene\" but KG depicts (none in KG)"
+    ],
+    "image_used": "data\\artwork_images\\ART_0010_0.jpg"
+  },
+  "ART_0012": {
+    "description": "The Titan Kronos is depicted with wild hair and wide, frantic eyes, clutching a pale, headless human figure. He is in the act of consuming the body, which he holds firmly with both hands. The figure is shown against a dark, indistinct background with no clothing or attributes.",
+    "figures_found": [],
+    "validation_issues": [
+      "INCOMPLETE: Gemini missed \"Cronus\" (in KG depicts list)"
+    ],
+    "image_used": "data\\artwork_images\\ART_0012_0.jpg"
+  },
+  "ART_0013": {
+    "description": "This relief depicts Rhea handing a stone wrapped in swaddling clothes to Cronus. Rhea wears a veil and chiton, while the bearded, seated Cronus is draped in a mantle that covers his head. The scene captures the moment Rhea deceives Cronus to save her son, Zeus.",
+    "figures_found": [
+      "Cronus",
+      "Rhea",
+      "Zeus"
+    ],
+    "validation_issues": [
+      "HALLUCINATION_RISK: Gemini mentions \"Zeus\" but KG depicts Cronus, Rhea"
+    ],
+    "image_used": "data\\artwork_images\\ART_0013_0.jpg"
+  },
+  "ART_0016": {
+    "description": "A muscular, elderly man with long white hair and a beard is crouched within a glowing red orb. He is using a large golden compass to measure the dark void below him. He is nude, and the scene is framed by swirling, cloud-like forms.",
+    "figures_found": [],
+    "validation_issues": [],
+    "image_used": "data\\artwork_images\\ART_0016_0.jpg"
+  },
+  "ART_0017": {
+    "description": "This bronze statue depicts Zeus (or Poseidon) in a dynamic, athletic stance. The figure is captured in the act of preparing to throw a missing object, likely a thunderbolt or trident. He is depicted as a nude, bearded male with a muscular physique and a focused, forward-facing gaze.",
+    "figures_found": [
+      "Poseidon",
+      "Zeus"
+    ],
+    "validation_issues": [
+      "HALLUCINATION_RISK: Gemini mentions \"Poseidon\" but KG depicts (none in KG)",
+      "HALLUCINATION_RISK: Gemini mentions \"Zeus\" but KG depicts (none in KG)"
+    ],
+    "image_used": "data\\artwork_images\\ART_0017_0.jpg"
+  },
+  "ART_0021": {
+    "description": "This relief depicts Athena grabbing the hair of the giant Alkyoneus, who is entwined with a serpent, while Gaia emerges from the earth below. Athena wears a peplos and aegis, while the winged Nike flies above to crown her. The scene captures a violent struggle from the Gigantomachy.",
+    "figures_found": [
+      "Athena",
+      "Earth",
+      "Gaia",
+      "Nike",
+      "Serpent"
+    ],
+    "validation_issues": [
+      "HALLUCINATION_RISK: Gemini mentions \"Athena\" but KG depicts (none in KG)",
+      "HALLUCINATION_RISK: Gemini mentions \"Earth\" but KG depicts (none in KG)",
+      "HALLUCINATION_RISK: Gemini mentions \"Gaia\" but KG depicts (none in KG)",
+      "HALLUCINATION_RISK: Gemini mentions \"Nike\" but KG depicts (none in KG)",
+      "HALLUCINATION_RISK: Gemini mentions \"Serpent\" but KG depicts (none in KG)"
+    ],
+    "image_used": "data\\artwork_images\\ART_0021_0.jpg"
+  },
+  "ART_0024": {
+    "description": "The painting depicts Hermes and Argus Panoptes. Hermes, wearing a winged petasos, leans over the sleeping Argus, who is slumped against a cow. Hermes holds a sword, preparing to slay the giant to rescue Io, who is disguised as the cow.",
+    "figures_found": [
+      "Argus",
+      "Hermes"
+    ],
+    "validation_issues": [
+      "HALLUCINATION_RISK: Gemini mentions \"Argus\" but KG depicts (none in KG)",
+      "HALLUCINATION_RISK: Gemini mentions \"Hermes\" but KG depicts (none in KG)"
+    ],
+    "image_used": "data\\artwork_images\\ART_0024_0.jpg"
+  },
+  "ART_0026": {
+    "description": "Zeus sits enthroned with Thetis kneeling before him, her hand touching his chin in a gesture of supplication. Zeus holds a scepter and is accompanied by an eagle, while Thetis wears a diadem and draped garments. A figure, likely Hera, watches from the clouds in the upper left.",
+    "figures_found": [
+      "Hera",
+      "Thetis",
+      "Zeus"
+    ],
+    "validation_issues": [
+      "HALLUCINATION_RISK: Gemini mentions \"Hera\" but KG depicts (none in KG)",
+      "HALLUCINATION_RISK: Gemini mentions \"Thetis\" but KG depicts (none in KG)",
+      "HALLUCINATION_RISK: Gemini mentions \"Zeus\" but KG depicts (none in KG)"
+    ],
+    "image_used": "data\\artwork_images\\ART_0026_0.jpg"
+  },
+  "ART_0030": {
+    "description": "Zeus sits enthroned with Thetis kneeling before him, her hand touching his chin in a gesture of supplication. Zeus holds a scepter and is accompanied by an eagle, while Thetis wears a diadem and draped garments. A figure, likely Hera, watches from the clouds in the upper left.",
+    "figures_found": [
+      "Hera",
+      "Thetis",
+      "Zeus"
+    ],
+    "validation_issues": [
+      "HALLUCINATION_RISK: Gemini mentions \"Hera\" but KG depicts (none in KG)",
+      "HALLUCINATION_RISK: Gemini mentions \"Thetis\" but KG depicts (none in KG)",
+      "HALLUCINATION_RISK: Gemini mentions \"Zeus\" but KG depicts (none in KG)"
+    ],
+    "image_used": "data\\artwork_images\\ART_0030_0.jpg"
+  },
+  "ART_0032": {
+    "description": "The scene depicts Zeus, identified by his beard, laurel wreath, and scepter, pursuing the youth Ganymede, who holds a rooster. Zeus reaches out to grasp the youth, who carries a hoop and looks back while moving away. The figures are rendered in the red-figure pottery style.",
+    "figures_found": [
+      "Ganymede",
+      "Zeus"
+    ],
+    "validation_issues": [
+      "HALLUCINATION_RISK: Gemini mentions \"Ganymede\" but KG depicts (none in KG)",
+      "HALLUCINATION_RISK: Gemini mentions \"Zeus\" but KG depicts (none in KG)"
+    ],
+    "image_used": "data\\artwork_images\\ART_0032_0.jpg"
+  },
+  "ART_0035": {
+    "description": "Apollo, wearing a laurel wreath and glowing with a halo, stands before Hephaestus and his assistants in a forge. Apollo is informing the blacksmiths of the adultery of Aphrodite and Ares. The scene features a glowing metal piece on an anvil, various tools, and scattered armor.",
+    "figures_found": [
+      "Aphrodite",
+      "Apollo",
+      "Ares",
+      "Hephaestus"
+    ],
+    "validation_issues": [
+      "HALLUCINATION_RISK: Gemini mentions \"Aphrodite\" but KG depicts (none in KG)",
+      "HALLUCINATION_RISK: Gemini mentions \"Apollo\" but KG depicts (none in KG)",
+      "HALLUCINATION_RISK: Gemini mentions \"Ares\" but KG depicts (none in KG)",
+      "HALLUCINATION_RISK: Gemini mentions \"Hephaestus\" but KG depicts (none in KG)"
+    ],
+    "image_used": "data\\artwork_images\\ART_0035_0.jpg",
+    "corrected_description": "Helius, wearing a laurel wreath and glowing with a halo, stands before Hephaestus and his assistants in a forge. Helius is informing the blacksmiths of the adultery of Aphrodite and Ares. The scene features a glowing metal piece on an anvil, various tools, and scattered armor.",
+    "correction_note": "Name corrections applied: Apollo→Helius"
+  },
+  "ART_0036": {
+    "description": "The sculpture depicts Ares sitting with a small Eros at his feet. Ares rests his hands on his knee, holding a sword, while a shield leans against the rock beside him. He is partially draped in fabric, and the winged Eros looks up toward him.",
+    "figures_found": [
+      "Ares",
+      "Eros"
+    ],
+    "validation_issues": [
+      "HALLUCINATION_RISK: Gemini mentions \"Ares\" but KG depicts (none in KG)",
+      "HALLUCINATION_RISK: Gemini mentions \"Eros\" but KG depicts (none in KG)"
+    ],
+    "image_used": "data\\artwork_images\\ART_0036_0.jpg"
+  },
+  "ART_0038": {
+    "description": "The scene depicts Croesus seated on a pyre, holding a scepter and a phiale, while a figure identified by an inscription as Euthymos lights the wood. Croesus wears a laurel wreath and a chiton, while the attendant is nude. The pyre is constructed of stacked logs with visible flames.",
+    "figures_found": [
+      "Croesus"
+    ],
+    "validation_issues": [
+      "HALLUCINATION_RISK: Gemini mentions \"Croesus\" but KG depicts (none in KG)"
+    ],
+    "image_used": "data\\artwork_images\\ART_0038_0.jpg"
+  },
+  "ART_0041": {
+    "description": "This red-figure bell krater depicts a sacrificial scene involving a bearded man, likely a priest or deity, and several attendants. The central figure pours a libation over an altar while an assistant holds a ram and a musician plays the aulos. All figures wear laurel wreaths.",
+    "figures_found": [],
+    "validation_issues": [],
+    "image_used": "data\\artwork_images\\ART_0041_0.jpg"
+  },
+  "ART_0042": {
+    "description": "This red-figure vase painting depicts Apollo (second from left) and Artemis (far right) performing a sacrifice at an altar. Apollo holds a laurel branch over the flames while Artemis holds a phiale and a long staff. Both deities wear laurel wreaths and traditional chiton garments.",
+    "figures_found": [
+      "Apollo",
+      "Artemis"
+    ],
+    "validation_issues": [
+      "HALLUCINATION_RISK: Gemini mentions \"Apollo\" but KG depicts (none in KG)",
+      "HALLUCINATION_RISK: Gemini mentions \"Artemis\" but KG depicts (none in KG)"
+    ],
+    "image_used": "data\\artwork_images\\ART_0042_0.jpg"
+  },
+  "ART_0043": {
+    "description": "This mosaic depicts Poseidon riding a chariot pulled by four hippocampi across the sea, accompanied by a male figure with crab claws on his head and a female figure holding a staff. Poseidon is identified by his trident and halo, while the sea creatures represent his aquatic domain.",
+    "figures_found": [
+      "Poseidon"
+    ],
+    "validation_issues": [
+      "HALLUCINATION_RISK: Gemini mentions \"Poseidon\" but KG depicts (none in KG)"
+    ],
+    "image_used": "data\\artwork_images\\ART_0043_0.jpg"
+  },
+  "ART_0044": {
+    "description": "Aphrodite stands in a scallop shell chariot pulled by dolphins, surrounded by Tritons and Nereids. Above, Eros and other winged putti aim bows and arrows. The scene depicts the goddess of love traveling across the sea, accompanied by marine deities and cherubic figures.",
+    "figures_found": [
+      "Aphrodite",
+      "Eros",
+      "Nereids"
+    ],
+    "validation_issues": [
+      "HALLUCINATION_RISK: Gemini mentions \"Aphrodite\" but KG depicts (none in KG)",
+      "HALLUCINATION_RISK: Gemini mentions \"Eros\" but KG depicts (none in KG)",
+      "HALLUCINATION_RISK: Gemini mentions \"Nereids\" but KG depicts (none in KG)"
+    ],
+    "image_used": "data\\artwork_images\\ART_0044_0.jpg",
+    "corrected_description": "Galatea stands in a scallop shell chariot pulled by dolphins, surrounded by Tritons and Nereids. Above, Cupid and other winged putti aim bows and arrows. The scene depicts the goddess of love traveling across the sea, accompanied by marine deities and cherubic figures.",
+    "correction_note": "Name corrections applied: Aphrodite→Galatea, Eros→Cupid"
+  },
+  "ART_0047": {
+    "description": "The sculpture depicts Poseidon standing over a Triton. Poseidon holds a trident and strides forward, while the Triton kneels below, blowing into a conch shell. Poseidon is identified by his trident and wild, sea-like hair, while the Triton is distinguished by his aquatic, shell-like horn.",
+    "figures_found": [
+      "Poseidon",
+      "Triton"
+    ],
+    "validation_issues": [
+      "HALLUCINATION_RISK: Gemini mentions \"Poseidon\" but KG depicts (none in KG)",
+      "HALLUCINATION_RISK: Gemini mentions \"Triton\" but KG depicts (none in KG)"
+    ],
+    "image_used": "data\\artwork_images\\ART_0047_0.jpg"
+  },
+  "ART_0048": {
+    "description": "This is a reconstruction of the Athena Parthenos. Athena stands centrally, holding a small Nike in her right hand and a spear in her left, with a shield and serpent at her side. She wears a golden chiton, a helmet, and an aegis featuring the head of Medusa.",
+    "figures_found": [
+      "Athena",
+      "Medusa",
+      "Nike",
+      "Serpent"
+    ],
+    "validation_issues": [
+      "HALLUCINATION_RISK: Gemini mentions \"Athena\" but KG depicts (none in KG)",
+      "HALLUCINATION_RISK: Gemini mentions \"Medusa\" but KG depicts (none in KG)",
+      "HALLUCINATION_RISK: Gemini mentions \"Nike\" but KG depicts (none in KG)",
+      "HALLUCINATION_RISK: Gemini mentions \"Serpent\" but KG depicts (none in KG)"
+    ],
+    "image_used": "data\\artwork_images\\ART_0048_0.jpg"
+  },
+  "ART_0054": {
+    "description": "The painting depicts Athena (in a helmet) and Arachne (in a red skirt) competing in a weaving contest. They are surrounded by women spinning wool in a workshop, while a tapestry behind them illustrates a mythological scene with figures in classical attire. Athena wears a helmet and armor.",
+    "figures_found": [
+      "Arachne",
+      "Athena"
+    ],
+    "validation_issues": [
+      "HALLUCINATION_RISK: Gemini mentions \"Arachne\" but KG depicts (none in KG)",
+      "HALLUCINATION_RISK: Gemini mentions \"Athena\" but KG depicts (none in KG)"
+    ],
+    "image_used": "data\\artwork_images\\ART_0054_0.jpg"
+  },
+  "ART_0055": {
+    "description": "Athena stands centrally, wearing a golden helmet and a scale-patterned aegis featuring the Gorgoneion. She holds a long spear in her right hand, while a small, nude female figure stands upon her left hand. The background depicts shadowy, indistinct figures in a dark, atmospheric setting.",
+    "figures_found": [
+      "Athena"
+    ],
+    "validation_issues": [
+      "HALLUCINATION_RISK: Gemini mentions \"Athena\" but KG depicts (none in KG)"
+    ],
+    "image_used": "data\\artwork_images\\ART_0055_0.jpg"
+  },
+  "ART_0056": {
+    "description": "This relief depicts Athena leaning pensively against a tall, rectangular stele. She wears a peplos and a Corinthian helmet, resting her chin on her hand while holding a long spear. Her posture and downward gaze suggest a moment of quiet reflection or mourning.",
+    "figures_found": [
+      "Athena"
+    ],
+    "validation_issues": [
+      "HALLUCINATION_RISK: Gemini mentions \"Athena\" but KG depicts (none in KG)"
+    ],
+    "image_used": "data\\artwork_images\\ART_0056_0.jpg"
+  },
+  "ART_0060": {
+    "description": "This marble sculpture depicts Aphrodite. She is shown in a standing pose, partially draped in fabric that gathers around her hips and legs. Her arms are missing, and she wears her hair in a classic, wavy style.",
+    "figures_found": [
+      "Aphrodite"
+    ],
+    "validation_issues": [
+      "HALLUCINATION_RISK: Gemini mentions \"Aphrodite\" but KG depicts (none in KG)"
+    ],
+    "image_used": "data\\artwork_images\\ART_0060_0.jpg"
+  },
+  "ART_0064": {
+    "description": "The sculptor Pygmalion gazes at his creation, Galatea, who is coming to life as a nude woman. Pygmalion wears a long, dark blue robe and holds a chisel, while the statue stands amidst stone chips and tools. The scene depicts the moment of divine animation in a workshop setting.",
+    "figures_found": [
+      "Galatea",
+      "Pygmalion"
+    ],
+    "validation_issues": [
+      "HALLUCINATION_RISK: Gemini mentions \"Galatea\" but KG depicts (none in KG)",
+      "HALLUCINATION_RISK: Gemini mentions \"Pygmalion\" but KG depicts (none in KG)"
+    ],
+    "image_used": "data\\artwork_images\\ART_0064_0.jpg"
+  },
+  "ART_0067": {
+    "description": "The scene depicts Heracles and Omphale, with a small Eros figure between them. Heracles, wearing a lion skin, sits beside Omphale as he adjusts his sandal. The inscription \"GENVS VNDE LATINVM\" is visible on a pedestal near the winged child.",
+    "figures_found": [
+      "Eros",
+      "Heracles",
+      "Omphale"
+    ],
+    "validation_issues": [
+      "HALLUCINATION_RISK: Gemini mentions \"Eros\" but KG depicts (none in KG)",
+      "HALLUCINATION_RISK: Gemini mentions \"Heracles\" but KG depicts (none in KG)",
+      "HALLUCINATION_RISK: Gemini mentions \"Omphale\" but KG depicts (none in KG)"
+    ],
+    "image_used": "data\\artwork_images\\ART_0067_0.jpg",
+    "corrected_description": "Aphrodite (Venus) reclines with Anchises in a pastoral landscape. Cupid attends nearby, and putti play in the sky. The scene depicts the seduction of the mortal Anchises by the goddess of love.",
+    "correction_note": "AI description replaced (was: The scene depicts Heracles and Omphale, with a small Eros figure between them. Heracles, wearing a l...)"
+  },
+  "ART_0068": {
+    "description": "The figure is Eros, depicted as a winged youth with a mischievous expression. He stands amidst scattered musical instruments, armor, and a crown, holding arrows in his hand. His primary attributes are his large, dark wings and the arrows he wields.",
+    "figures_found": [
+      "Eros"
+    ],
+    "validation_issues": [
+      "HALLUCINATION_RISK: Gemini mentions \"Eros\" but KG depicts (none in KG)"
+    ],
+    "image_used": "data\\artwork_images\\ART_0068_0.jpg",
+    "corrected_description": "The figure is Cupid, depicted as a winged youth with a mischievous expression. He stands amidst scattered musical instruments, armor, and a crown, holding arrows in his hand. His primary attributes are his large, dark wings and the arrows he wields.",
+    "correction_note": "Name corrections applied: Eros→Cupid"
+  },
+  "ART_0071": {
+    "description": "This marble statue depicts Artemis, the Greek goddess of the hunt. She is shown walking forward while holding the antlers of a small deer with her left hand and reaching for an arrow in the quiver on her back. She wears a short, belted chiton and sandals, with a crescent diadem in her hair.",
+    "figures_found": [
+      "Artemis"
+    ],
+    "validation_issues": [
+      "HALLUCINATION_RISK: Gemini mentions \"Artemis\" but KG depicts (none in KG)"
+    ],
+    "image_used": "data\\artwork_images\\ART_0071_0.jpg"
+  },
+  "ART_0076": {
+    "description": "This statue depicts Artemis of Ephesus standing in a frontal, rigid pose with arms outstretched. She wears a mural crown and a chest piece adorned with multiple ovoid protrusions, surrounded by relief carvings of various animals and winged figures on her garment.",
+    "figures_found": [
+      "Artemis"
+    ],
+    "validation_issues": [
+      "HALLUCINATION_RISK: Gemini mentions \"Artemis\" but KG depicts (none in KG)"
+    ],
+    "image_used": "data\\artwork_images\\ART_0076_0.jpg"
+  },
+  "ART_0078": {
+    "description": "The Pythia sits on a tripod holding a phiale and laurel branch, while Aegeus stands opposite her. The scene depicts a consultation at the Delphic oracle. The Pythia wears a chiton and veil, while Aegeus is draped in a himation and wears a laurel wreath.",
+    "figures_found": [
+      "Aegeus",
+      "Pythia"
+    ],
+    "validation_issues": [
+      "HALLUCINATION_RISK: Gemini mentions \"Aegeus\" but KG depicts (none in KG)",
+      "HALLUCINATION_RISK: Gemini mentions \"Pythia\" but KG depicts (none in KG)"
+    ],
+    "image_used": "data\\artwork_images\\ART_0078_0.jpg"
+  },
+  "ART_0080": {
+    "description": "This relief depicts the god Asclepius standing over a patient, while a smaller figure (likely a devotee) assists and another patient rests on a bed with a snake coiled behind them. Asclepius is shown as a bearded man in a himation, and the snake is a key attribute of his healing cult.",
+    "figures_found": [
+      "Asclepius"
+    ],
+    "validation_issues": [
+      "HALLUCINATION_RISK: Gemini mentions \"Asclepius\" but KG depicts (none in KG)"
+    ],
+    "image_used": "data\\artwork_images\\ART_0080_0.jpg",
+    "corrected_description": "A votive relief showing Amphiaraüs, the healing hero, tending to a patient. A snake coils around the patient's shoulder. The scene depicts the healing process at the sanctuary of Amphiaraüs at Oropus.",
+    "correction_note": "AI description replaced (was: This relief depicts the god Asclepius standing over a patient, while a smaller figure (likely a devo...)"
+  },
+  "ART_0081": {
+    "description": "The satyr Marsyas is being flayed alive while tied to a tree, watched by Apollo (playing a lira da braccio), King Midas, and other satyrs. The scene depicts the brutal punishment of Marsyas for challenging Apollo to a musical contest. Key attributes include a knife, bucket, and dog.",
+    "figures_found": [
+      "Apollo",
+      "Marsyas",
+      "Midas",
+      "Satyrs",
+      "satyr"
+    ],
+    "validation_issues": [
+      "HALLUCINATION_RISK: Gemini mentions \"Apollo\" but KG depicts (none in KG)",
+      "HALLUCINATION_RISK: Gemini mentions \"Marsyas\" but KG depicts (none in KG)",
+      "HALLUCINATION_RISK: Gemini mentions \"Midas\" but KG depicts (none in KG)",
+      "HALLUCINATION_RISK: Gemini mentions \"Satyrs\" but KG depicts (none in KG)",
+      "HALLUCINATION_RISK: Gemini mentions \"satyr\" but KG depicts (none in KG)"
+    ],
+    "image_used": "data\\artwork_images\\ART_0081_0.jpg"
+  },
+  "ART_0082": {
+    "description": "The figure is Helios, depicted with a radiant nimbus around his head. He is driving a chariot pulled by two horses across a golden background adorned with vine motifs. Key attributes include his solar crown and the chariot, which symbolize his role as the personification of the sun.",
+    "figures_found": [],
+    "validation_issues": [],
+    "image_used": "data\\artwork_images\\ART_0082_0.jpg"
+  },
+  "ART_0083": {
+    "description": "This marble statue depicts the god Apollo. He stands in a contrapposto pose, extending his left arm while draped in a cloak fastened at his shoulder. He is identified by the serpent coiled around the tree trunk support at his side, a common attribute associated with his oracular powers.",
+    "figures_found": [
+      "Apollo",
+      "Serpent"
+    ],
+    "validation_issues": [
+      "HALLUCINATION_RISK: Gemini mentions \"Apollo\" but KG depicts (none in KG)",
+      "HALLUCINATION_RISK: Gemini mentions \"Serpent\" but KG depicts (none in KG)"
+    ],
+    "image_used": "data\\artwork_images\\ART_0083_0.jpg"
+  },
+  "ART_0085": {
+    "description": "The figure is Apollo, depicted riding a large winged tripod over the sea. He holds a lyre and a laurel branch while dolphins and sea creatures swim below. He wears a chiton and a wreath, seated upon the tripod which is supported by two large wings.",
+    "figures_found": [
+      "Apollo"
+    ],
+    "validation_issues": [
+      "HALLUCINATION_RISK: Gemini mentions \"Apollo\" but KG depicts (none in KG)"
+    ],
+    "image_used": "data\\artwork_images\\ART_0085_0.jpg"
+  },
+  "ART_0088": {
+    "description": "The scene depicts Hermes, identifiable by his traveler's hat (petasos) and staff (kerykeion), standing near a group of cattle. He appears to be herding or guarding the animals, which are positioned beneath a tree where a small hare is perched.",
+    "figures_found": [
+      "Hermes"
+    ],
+    "validation_issues": [
+      "HALLUCINATION_RISK: Gemini mentions \"Hermes\" but KG depicts (none in KG)"
+    ],
+    "image_used": "data\\artwork_images\\ART_0088_0.jpg"
+  },
+  "ART_0089": {
+    "description": "The figure is Hermes, depicted standing in a circular frame decorated with a meander pattern. He is shown from behind, holding a caduceus in his right hand. He wears a petasos hat, a chlamys cloak, and winged sandals.",
+    "figures_found": [
+      "Hermes"
+    ],
+    "validation_issues": [
+      "HALLUCINATION_RISK: Gemini mentions \"Hermes\" but KG depicts (none in KG)"
+    ],
+    "image_used": "data\\artwork_images\\ART_0089_0.jpg"
+  },
+  "ART_0090": {
+    "description": "This bronze sculpture depicts Hermes, the messenger god, poised in flight. He is balanced on one foot atop a gust of wind emanating from a head, while holding his caduceus. He wears a winged petasos (hat) and winged sandals, identifying him as the swift herald of the gods.",
+    "figures_found": [
+      "Hermes",
+      "Messenger"
+    ],
+    "validation_issues": [
+      "HALLUCINATION_RISK: Gemini mentions \"Hermes\" but KG depicts (none in KG)",
+      "HALLUCINATION_RISK: Gemini mentions \"Messenger\" but KG depicts (none in KG)"
+    ],
+    "image_used": "data\\artwork_images\\ART_0090_0.jpg"
+  },
+  "ART_0091": {
+    "description": "A woman in a chiton leans forward to embrace a herm, a pillar topped with the bearded head of Hermes. The scene depicts a ritual act of devotion or supplication toward the deity. The herm is identified by its characteristic phallic symbol and the bearded head of the god.",
+    "figures_found": [
+      "Hermes"
+    ],
+    "validation_issues": [
+      "HALLUCINATION_RISK: Gemini mentions \"Hermes\" but KG depicts (none in KG)"
+    ],
+    "image_used": "data\\artwork_images\\ART_0091_0.jpg"
+  },
+  "ART_0093": {
+    "description": "This marble sculpture depicts the figure of Hermaphroditus sleeping on a tufted mattress. The figure is shown lying prone, with their back exposed and legs partially draped in a simple cloth. They are resting their head on a pillow, appearing in a state of deep, peaceful slumber.",
+    "figures_found": [
+      "Hermaphroditus"
+    ],
+    "validation_issues": [
+      "HALLUCINATION_RISK: Gemini mentions \"Hermaphroditus\" but KG depicts (none in KG)"
+    ],
+    "image_used": "data\\artwork_images\\ART_0093_0.jpg"
+  },
+  "ART_0095": {
+    "description": "Zeus, appearing in human form, stands beside a reclining woman, likely Semele. Zeus is depicted with a glowing halo and a red cloak, while an eagle—his sacred animal—appears on the left. The scene captures a dramatic, intimate encounter between the god and the mortal woman.",
+    "figures_found": [
+      "Semele",
+      "Zeus"
+    ],
+    "validation_issues": [
+      "HALLUCINATION_RISK: Gemini mentions \"Semele\" but KG depicts (none in KG)",
+      "HALLUCINATION_RISK: Gemini mentions \"Zeus\" but KG depicts (none in KG)"
+    ],
+    "image_used": "data\\artwork_images\\ART_0095_0.jpg"
+  },
+  "ART_0096": {
+    "description": "This Roman sarcophagus depicts Dionysus riding an elephant, accompanied by a retinue of satyrs, maenads, and panthers. The god is identified by his thyrsus and exotic entourage, while the scene captures his triumphal return from India. The relief features lush foliage and wild animals.",
+    "figures_found": [
+      "Dionysus",
+      "Maenads",
+      "Satyrs"
+    ],
+    "validation_issues": [
+      "HALLUCINATION_RISK: Gemini mentions \"Dionysus\" but KG depicts (none in KG)",
+      "HALLUCINATION_RISK: Gemini mentions \"Maenads\" but KG depicts (none in KG)",
+      "HALLUCINATION_RISK: Gemini mentions \"Satyrs\" but KG depicts (none in KG)"
+    ],
+    "image_used": "data\\artwork_images\\ART_0096_0.jpg"
+  },
+  "ART_0097": {
+    "description": "This scene depicts the god Hermes, identified by his winged hat (*petasos*) and winged boots, standing before a seated youth, likely a deceased individual. Hermes holds his herald's staff (*kerykeion*) and acts as a psychopomp, guiding the soul of the departed to the underworld.",
+    "figures_found": [
+      "Hermes"
+    ],
+    "validation_issues": [
+      "HALLUCINATION_RISK: Gemini mentions \"Hermes\" but KG depicts (none in KG)"
+    ],
+    "image_used": "data/artwork_images/ART_0097_0.jpg",
+    "corrected_description": "An Attic red-figure lekythos depicting Zeus giving birth to Dionysus from his thigh. Hermes stands nearby. The scene shows the second birth of Dionysus.",
+    "correction_note": "AI description replaced (was: This scene depicts the god Hermes, identified by his winged hat (*petasos*) and winged boots, standi...)"
+  },
+  "ART_0098": {
+    "description": "This image is a surrealist photograph by Clarence John Laughlin titled *The Creation of Eve* (or *The Birth of Eve*). It depicts a stylized, sculptural human figure with a baby emerging from its thigh, a visual metaphor referencing the biblical creation of Eve from Adam’s rib. The composition uses dramatic chiaroscuro to emphasize the surreal, dreamlike nature of the birth.",
+    "figures_found": [],
+    "validation_issues": [],
+    "image_used": "data/artwork_images/ART_0098_0.jpg",
+    "corrected_description": "A surrealist photograph depicting the birth of Dionysus from Zeus's thigh, with stylized sculptural forms and dramatic lighting.",
+    "correction_note": "AI description replaced (was: This image is a surrealist photograph by Clarence John Laughlin titled *The Creation of Eve* (or *Th...)"
+  },
+  "ART_0100": {
+    "description": "This black-figure kylix depicts four satyrs and two maenads dancing amidst grapevines, with a winged figure in the central medallion. The scene shows a Dionysian revelry. The satyrs are identified by their tails and pointed ears, while the maenads wear chiton-like garments.",
+    "figures_found": [
+      "Maenads",
+      "Satyrs"
+    ],
+    "validation_issues": [
+      "HALLUCINATION_RISK: Gemini mentions \"Maenads\" but KG depicts (none in KG)",
+      "HALLUCINATION_RISK: Gemini mentions \"Satyrs\" but KG depicts (none in KG)"
+    ],
+    "image_used": "data\\artwork_images\\ART_0100_0.jpg",
+    "corrected_description": "This black-figure kylix depicts four satyrs and two maenads dancing amidst grapevines, with a winged figure in the central medallion. The scene shows a Dionysian revelry. The satyrs are identified by their tails and pointed ears, while the maenads wear chiton-like garments. (scene also includes: Dionysus)",
+    "correction_note": "Added missing figures: Dionysus"
+  },
+  "ART_0105": {
+    "description": "The god Dionysos reclines on a ship, which is surrounded by seven dolphins swimming in the sea. A grapevine laden with clusters of grapes grows from the ship's mast, arching over the figure. Dionysos is depicted wearing a wreath and a patterned garment.",
+    "figures_found": [],
+    "validation_issues": [],
+    "image_used": "data\\artwork_images\\ART_0105_0.jpg",
+    "corrected_description": "The god Dionysos reclines on a ship, which is surrounded by seven dolphins swimming in the sea. A grapevine laden with clusters of grapes grows from the ship's mast, arching over the figure. Dionysos is depicted wearing a wreath and a patterned garment. (scene also includes: Dionysus)",
+    "correction_note": "Added missing figures: Dionysus"
+  },
+  "ART_0106": {
+    "description": "A maenad holding a thyrsus flees from a goat-legged satyr. The satyr reaches toward her near a herm, a pillar topped with a bearded head. The maenad wears a chiton and animal skin, while the satyr is depicted with goat horns and ears.",
+    "figures_found": [
+      "satyr"
+    ],
+    "validation_issues": [
+      "HALLUCINATION_RISK: Gemini mentions \"satyr\" but KG depicts (none in KG)"
+    ],
+    "image_used": "data\\artwork_images\\ART_0106_0.jpg",
+    "corrected_description": "A maenad holding a thyrsus flees from a goat-legged satyr. The satyr reaches toward her near a herm, a pillar topped with a bearded head. The maenad wears a chiton and animal skin, while the satyr is depicted with goat horns and ears. (scene also includes: Pan, Priapus)",
+    "correction_note": "Added missing figures: Pan, Priapus"
+  },
+  "ART_0107": {
+    "description": "The painting depicts Narcissus lying by a pool, gazing at his reflection, while Echo reclines on a rock behind him and Eros stands nearby holding a torch. Narcissus is partially draped in white and red cloth, while Eros is identified by his wings, quiver, and torch.",
+    "figures_found": [
+      "Echo",
+      "Eros",
+      "Narcissus"
+    ],
+    "validation_issues": [
+      "HALLUCINATION_RISK: Gemini mentions \"Echo\" but KG depicts (none in KG)",
+      "HALLUCINATION_RISK: Gemini mentions \"Eros\" but KG depicts (none in KG)",
+      "HALLUCINATION_RISK: Gemini mentions \"Narcissus\" but KG depicts (none in KG)"
+    ],
+    "image_used": "data\\artwork_images\\ART_0107_0.jpg",
+    "corrected_description": "The painting depicts Narcissus lying by a pool, gazing at his reflection, while Echo reclines on a rock behind him and Cupid stands nearby holding a torch. Narcissus is partially draped in white and red cloth, while Cupid is identified by his wings, quiver, and torch.",
+    "correction_note": "Name corrections applied: Eros→Cupid"
+  },
+  "ART_0108": {
+    "description": "This marble sculpture depicts a seated female figure, likely Hera, resting on a throne. She is draped in a chiton and a heavy himation that covers her head like a veil. Her arms are broken off, and she sits in a calm, regal posture on a block-like seat.",
+    "figures_found": [
+      "Hera"
+    ],
+    "validation_issues": [
+      "HALLUCINATION_RISK: Gemini mentions \"Hera\" but KG depicts (none in KG)"
+    ],
+    "image_used": "data\\artwork_images\\ART_0108_0.jpg",
+    "corrected_description": "This marble sculpture depicts a seated female figure, likely Demeter, resting on a throne. She is draped in a chiton and a heavy himation that covers her head like a veil. Her arms are broken off, and she sits in a calm, regal posture on a block-like seat.",
+    "correction_note": "Name corrections applied: Hera→Demeter"
+  },
+  "ART_0110": {
+    "description": "The sculpture depicts Hades carrying Persephone. The god of the underworld is shown abducting the goddess, who is draped in flowing fabric. The figures are rendered in a highly reflective gold finish and are positioned atop a rocky base adorned with small white flowers.",
+    "figures_found": [
+      "Hades",
+      "Persephone"
+    ],
+    "validation_issues": [
+      "HALLUCINATION_RISK: Gemini mentions \"Hades\" but KG depicts (none in KG)",
+      "HALLUCINATION_RISK: Gemini mentions \"Persephone\" but KG depicts (none in KG)"
+    ],
+    "image_used": "data\\artwork_images\\ART_0110_0.jpg"
+  },
+  "ART_0114": {
+    "description": "This votive tablet depicts Demeter and Persephone seated on the right, receiving initiates led by Iacchus. The figures wear elaborate chitons, himatia, and laurel wreaths, while holding torches and ritual objects like the *bakchos*. The scene represents a procession of the Eleusinian Mysteries.",
+    "figures_found": [
+      "Demeter",
+      "Iacchus",
+      "Persephone"
+    ],
+    "validation_issues": [
+      "HALLUCINATION_RISK: Gemini mentions \"Demeter\" but KG depicts (none in KG)",
+      "HALLUCINATION_RISK: Gemini mentions \"Iacchus\" but KG depicts (none in KG)",
+      "HALLUCINATION_RISK: Gemini mentions \"Persephone\" but KG depicts (none in KG)"
+    ],
+    "image_used": "data\\artwork_images\\ART_0114_0.jpg"
+  },
+  "ART_0120": {
+    "description": "The three-headed dog Cerberus is depicted lying down in a cavernous, fiery landscape. The creature holds a human limb in one of its paws while its heads snarl and gaze in different directions. It is characterized by its multiple canine heads, sharp teeth, and a serpentine tail.",
+    "figures_found": [
+      "Cerberus"
+    ],
+    "validation_issues": [
+      "HALLUCINATION_RISK: Gemini mentions \"Cerberus\" but KG depicts (none in KG)"
+    ],
+    "image_used": "data\\artwork_images\\ART_0120_0.jpg"
+  },
+  "ART_0121": {
+    "description": "The scene depicts Athena, Heracles, Hermes, and a seated figure, likely Zeus. Heracles stands at the center, flanked by Athena on the left and Hermes on the right, as they prepare for his transition to Olympus. Athena wears a helmet and chiton, while Hermes holds a caduceus.",
+    "figures_found": [
+      "Athena",
+      "Heracles",
+      "Hermes",
+      "Olympus",
+      "Zeus"
+    ],
+    "validation_issues": [
+      "HALLUCINATION_RISK: Gemini mentions \"Athena\" but KG depicts (none in KG)",
+      "HALLUCINATION_RISK: Gemini mentions \"Heracles\" but KG depicts (none in KG)",
+      "HALLUCINATION_RISK: Gemini mentions \"Hermes\" but KG depicts (none in KG)",
+      "HALLUCINATION_RISK: Gemini mentions \"Olympus\" but KG depicts (none in KG)",
+      "HALLUCINATION_RISK: Gemini mentions \"Zeus\" but KG depicts (none in KG)"
+    ],
+    "image_used": "data\\artwork_images\\ART_0121_0.jpg",
+    "corrected_description": "An Attic red-figure vase showing Ixion bound to a wheel, with Hera seated on her throne and Athena, Hermes, and Ares looking on. The scene depicts Ixion's punishment for attempting to seduce Hera.",
+    "correction_note": "AI description replaced (was: The scene depicts Athena, Heracles, Hermes, and a seated figure, likely Zeus. Heracles stands at the...)"
+  },
+  "ART_0123": {
+    "description": "This mosaic depicts Orpheus seated and playing a lyre, surrounded by various animals including a lion, a leopard, a boar, and an eagle. He wears a Phrygian cap, a tunic, and trousers. The scene illustrates the legendary power of his music to tame wild beasts.",
+    "figures_found": [
+      "Boar",
+      "Orpheus"
+    ],
+    "validation_issues": [
+      "HALLUCINATION_RISK: Gemini mentions \"Boar\" but KG depicts (none in KG)",
+      "HALLUCINATION_RISK: Gemini mentions \"Orpheus\" but KG depicts (none in KG)"
+    ],
+    "image_used": "data\\artwork_images\\ART_0123_0.jpg"
+  },
+  "ART_0124": {
+    "description": "This relief depicts Hermes, Eurydice, and Orpheus. Hermes, acting as psychopomp, gently touches Eurydice’s hand as she prepares to return to the underworld. Hermes wears a chlamys and petasos, while Orpheus is dressed in a Thracian cap and cloak.",
+    "figures_found": [
+      "Eurydice",
+      "Hermes",
+      "Orpheus"
+    ],
+    "validation_issues": [
+      "HALLUCINATION_RISK: Gemini mentions \"Eurydice\" but KG depicts (none in KG)",
+      "HALLUCINATION_RISK: Gemini mentions \"Hermes\" but KG depicts (none in KG)",
+      "HALLUCINATION_RISK: Gemini mentions \"Orpheus\" but KG depicts (none in KG)"
+    ],
+    "image_used": "data\\artwork_images\\ART_0124_0.jpg"
+  },
+  "ART_0125": {
+    "description": "The central figure is Apollo, seated on a rock and playing a kithara. He is flanked by four figures, including a youth holding a staff and others wearing patterned cloaks and headbands. Apollo wears a laurel wreath, while the others appear as attendants or worshippers in this scene.",
+    "figures_found": [
+      "Apollo"
+    ],
+    "validation_issues": [
+      "HALLUCINATION_RISK: Gemini mentions \"Apollo\" but KG depicts (none in KG)"
+    ],
+    "image_used": "data\\artwork_images\\ART_0125_0.jpg",
+    "corrected_description": "The central figure is Orpheus, seated on a rock and playing a kithara. He is flanked by four figures, including a youth holding a staff and others wearing patterned cloaks and headbands. Orpheus wears a laurel wreath, while the others appear as attendants or worshippers in this scene.",
+    "correction_note": "Name corrections applied: Apollo→Orpheus"
+  },
+  "ART_0126": {
+    "description": "This relief depicts the central figure of Mithras wearing a Phrygian cap and tunic, plunging a dagger into the neck of a bull. He is flanked by Sol in the upper left and Luna in the upper right, while a dog, snake, and scorpion surround the bull.",
+    "figures_found": [
+      "Bull",
+      "Luna",
+      "Mithras",
+      "Sol"
+    ],
+    "validation_issues": [
+      "HALLUCINATION_RISK: Gemini mentions \"Bull\" but KG depicts (none in KG)",
+      "HALLUCINATION_RISK: Gemini mentions \"Luna\" but KG depicts (none in KG)",
+      "HALLUCINATION_RISK: Gemini mentions \"Mithras\" but KG depicts (none in KG)",
+      "HALLUCINATION_RISK: Gemini mentions \"Sol\" but KG depicts (none in KG)"
+    ],
+    "image_used": "data\\artwork_images\\ART_0126_0.jpg"
+  },
+  "ART_0129": {
+    "description": "This relief depicts Europa riding a bull across the sea. She wears a chiton and a mantle draped over her shoulder, while the bull swims above a dolphin. The scene captures the moment of her abduction, with Europa holding the bull's horn as they traverse the water.",
+    "figures_found": [
+      "Bull",
+      "Europa"
+    ],
+    "validation_issues": [
+      "HALLUCINATION_RISK: Gemini mentions \"Bull\" but KG depicts (none in KG)",
+      "HALLUCINATION_RISK: Gemini mentions \"Europa\" but KG depicts (none in KG)"
+    ],
+    "image_used": "data\\artwork_images\\ART_0129_0.jpg"
+  },
+  "ART_0132": {
+    "description": "Oedipus sits on a rock wearing a petasos hat and chlamys, contemplating the Sphinx, who perches on an Ionic column. The scene depicts their famous encounter where Oedipus prepares to solve her riddle. The Sphinx is represented as a winged creature with a lion's body and a woman's head.",
+    "figures_found": [
+      "Oedipus",
+      "Sphinx"
+    ],
+    "validation_issues": [
+      "HALLUCINATION_RISK: Gemini mentions \"Oedipus\" but KG depicts (none in KG)",
+      "HALLUCINATION_RISK: Gemini mentions \"Sphinx\" but KG depicts (none in KG)"
+    ],
+    "image_used": "data\\artwork_images\\ART_0132_0.jpg"
+  },
+  "ART_0136": {
+    "description": "This marble relief depicts Heracles, identifiable by his lion skin, seated centrally among several warriors. The scene shows a group of armed men surrounding the hero, who appears to be resting or contemplating. Key attributes include the lion skin, various shields, and swords.",
+    "figures_found": [
+      "Heracles"
+    ],
+    "validation_issues": [
+      "HALLUCINATION_RISK: Gemini mentions \"Heracles\" but KG depicts (none in KG)"
+    ],
+    "image_used": "data\\artwork_images\\ART_0136_0.jpg"
+  },
+  "ART_0139": {
+    "description": "This red-figure calyx krater depicts a bearded man, likely Theseus, grasping a woman by the wrist while a female figure stands to the left with arms outstretched. The man wears a short chiton and carries a sword at his side, while the women are dressed in long, flowing chitons.",
+    "figures_found": [
+      "Theseus"
+    ],
+    "validation_issues": [
+      "HALLUCINATION_RISK: Gemini mentions \"Theseus\" but KG depicts (none in KG)"
+    ],
+    "image_used": "data\\artwork_images\\ART_0139_0.jpg",
+    "corrected_description": "An Attic red-figure krater depicting the death of Agamemnon. Aegisthus holds Agamemnon by the hair while Clytemnestra rushes in with an axe.",
+    "correction_note": "AI description replaced (was: This red-figure calyx krater depicts a bearded man, likely Theseus, grasping a woman by the wrist wh...)"
+  },
+  "ART_0140": {
+    "description": "This Apulian volute-krater depicts Apollo, Artemis, and Orestes at the omphalos in Delphi. Apollo holds a laurel branch and bow, while Orestes sits on the omphalos draped in a cloak. Artemis stands to the right with a bow and hound, and a woman flees to the left.",
+    "figures_found": [
+      "Apollo",
+      "Artemis",
+      "Orestes"
+    ],
+    "validation_issues": [
+      "HALLUCINATION_RISK: Gemini mentions \"Apollo\" but KG depicts (none in KG)",
+      "HALLUCINATION_RISK: Gemini mentions \"Artemis\" but KG depicts (none in KG)",
+      "HALLUCINATION_RISK: Gemini mentions \"Orestes\" but KG depicts (none in KG)"
+    ],
+    "image_used": "data\\artwork_images\\ART_0140_0.jpg"
+  },
+  "ART_0141": {
+    "description": "Hermes, wearing a petasos and holding a caduceus, stands to the right, while a figure in a pilos hat holding a spear stands to the left. A woman sits on a stepped tomb monument adorned with a snake and offerings. Hermes holds a wreath above the tomb, suggesting a funerary ritual.",
+    "figures_found": [
+      "Hermes"
+    ],
+    "validation_issues": [
+      "HALLUCINATION_RISK: Gemini mentions \"Hermes\" but KG depicts (none in KG)"
+    ],
+    "image_used": "data\\artwork_images\\ART_0141_0.jpg"
+  },
+  "ART_0142": {
+    "description": "This red-figure calyx krater depicts the death of Orpheus at the hands of a Thracian woman. The central warrior figure, wearing a helmet and holding a sword, attacks the bearded Orpheus, who holds a lyre. Two women flank the scene, one holding a weapon and the other gesturing in alarm.",
+    "figures_found": [
+      "Death",
+      "Orpheus"
+    ],
+    "validation_issues": [
+      "HALLUCINATION_RISK: Gemini mentions \"Death\" but KG depicts (none in KG)",
+      "HALLUCINATION_RISK: Gemini mentions \"Orpheus\" but KG depicts (none in KG)"
+    ],
+    "image_used": "data\\artwork_images\\ART_0142_0.jpg",
+    "corrected_description": "An Athenian red-figure krater depicting Orestes killing Aegisthus while Clytemnestra approaches with an axe and Electra runs in from the right.",
+    "correction_note": "AI description replaced (was: This red-figure calyx krater depicts the death of Orpheus at the hands of a Thracian woman. The cent...)"
+  },
+  "ART_0145": {
+    "description": "This red-figure calyx krater depicts the winged figures Hypnos (Sleep) and Thanatos (Death) carrying the body of Sarpedon, while Hermes stands in the center. The scene shows the transport of the fallen hero's corpse from the battlefield. Hermes holds a caduceus and wears a petasos.",
+    "figures_found": [
+      "Death",
+      "Hermes",
+      "Hypnos",
+      "Sarpedon",
+      "Sleep",
+      "Thanatos"
+    ],
+    "validation_issues": [
+      "HALLUCINATION_RISK: Gemini mentions \"Death\" but KG depicts (none in KG)",
+      "HALLUCINATION_RISK: Gemini mentions \"Hermes\" but KG depicts (none in KG)",
+      "HALLUCINATION_RISK: Gemini mentions \"Hypnos\" but KG depicts (none in KG)",
+      "HALLUCINATION_RISK: Gemini mentions \"Sarpedon\" but KG depicts (none in KG)",
+      "HALLUCINATION_RISK: Gemini mentions \"Sleep\" but KG depicts (none in KG)",
+      "HALLUCINATION_RISK: Gemini mentions \"Thanatos\" but KG depicts (none in KG)"
+    ],
+    "image_used": "data\\artwork_images\\ART_0145_0.jpg"
+  },
+  "ART_0146": {
+    "description": "The scene depicts the hero Aeneas carrying his father, Anchises, on his back. Aeneas is dressed in a short chiton and a helmet, while the elderly Anchises holds a staff. A large circular shield is visible behind them, and the figures are rendered in the red-figure pottery style.",
+    "figures_found": [
+      "Aeneas",
+      "Anchises"
+    ],
+    "validation_issues": [
+      "HALLUCINATION_RISK: Gemini mentions \"Aeneas\" but KG depicts (none in KG)",
+      "HALLUCINATION_RISK: Gemini mentions \"Anchises\" but KG depicts (none in KG)"
+    ],
+    "image_used": "data\\artwork_images\\ART_0146_0.jpg",
+    "corrected_description": "An Attic red-figure amphora showing Diomedes holding the Palladium (sacred statue of Athena), with Odysseus accompanying him. The scene depicts the theft of the Palladium from Troy.",
+    "correction_note": "AI description replaced (was: The scene depicts the hero Aeneas carrying his father, Anchises, on his back. Aeneas is dressed in a...)"
+  },
+  "ART_0147": {
+    "description": "The figures are Achilles and Ajax. They are hunched over, intently playing a board game between them. Both are depicted as bearded warriors wearing ornate, patterned cloaks over their armor, with their helmets, spears, and shields resting nearby.",
+    "figures_found": [
+      "Achilles",
+      "Ajax"
+    ],
+    "validation_issues": [
+      "HALLUCINATION_RISK: Gemini mentions \"Achilles\" but KG depicts (none in KG)",
+      "HALLUCINATION_RISK: Gemini mentions \"Ajax\" but KG depicts (none in KG)"
+    ],
+    "image_used": "data\\artwork_images\\ART_0147_0.jpg"
+  },
+  "ART_0148": {
+    "description": "This red-figure kylix depicts the hero Peleus wrestling the sea-nymph Thetis. Thetis is shown attempting to escape by transforming into various creatures, including a lion and a snake, which are coiled around her body. Peleus wears a chiton and holds a sword at his side.",
+    "figures_found": [
+      "Peleus",
+      "Thetis"
+    ],
+    "validation_issues": [
+      "HALLUCINATION_RISK: Gemini mentions \"Peleus\" but KG depicts (none in KG)",
+      "HALLUCINATION_RISK: Gemini mentions \"Thetis\" but KG depicts (none in KG)"
+    ],
+    "image_used": "data\\artwork_images\\ART_0148_0.jpg"
+  },
+  "ART_0149": {
+    "description": "The painting depicts Achilles, Clytemnestra, Iphigenia, and Agamemnon. Agamemnon gestures toward the horizon as he prepares to sacrifice his daughter, Iphigenia, who holds an olive branch. Achilles wears a plumed helmet, while Clytemnestra wears a crown and Agamemnon a red cloak and staff.",
+    "figures_found": [
+      "Achilles",
+      "Agamemnon",
+      "Clytemnestra",
+      "Iphigenia"
+    ],
+    "validation_issues": [
+      "HALLUCINATION_RISK: Gemini mentions \"Achilles\" but KG depicts (none in KG)",
+      "HALLUCINATION_RISK: Gemini mentions \"Agamemnon\" but KG depicts (none in KG)",
+      "HALLUCINATION_RISK: Gemini mentions \"Clytemnestra\" but KG depicts (none in KG)",
+      "HALLUCINATION_RISK: Gemini mentions \"Iphigenia\" but KG depicts (none in KG)"
+    ],
+    "image_used": "data\\artwork_images\\ART_0149_0.jpg"
+  },
+  "ART_0150": {
+    "description": "This red-figure lekythos depicts a bearded male figure, likely a hunter or traveler, resting on a rocky outcrop beneath a tree. He wears a short chiton and sandals, with a petasos hat hanging behind his neck and a quiver resting beside him.",
+    "figures_found": [],
+    "validation_issues": [],
+    "image_used": "data\\artwork_images\\ART_0150_0.jpg",
+    "corrected_description": "This red-figure lekythos depicts a bearded male figure, likely a hunter or traveler, resting on a rocky outcrop beneath a tree. He wears a short chiton and sandals, with a petasos hat hanging behind his neck and a quiver resting beside him. (scene also includes: Philoctetes, Heracles)",
+    "correction_note": "Added missing figures: Philoctetes, Heracles"
+  },
+  "ART_0155": {
+    "description": "The scene depicts the construction of the Trojan Horse, with figures including Laocoön (the bearded man pointing) and his son. Workers in tunics use hammers and chisels to assemble the massive wooden horse structure. The figures wear classical robes and tunics, while the horse is the central focus.",
+    "figures_found": [
+      "Laocoön"
+    ],
+    "validation_issues": [
+      "HALLUCINATION_RISK: Gemini mentions \"Laocoön\" but KG depicts (none in KG)"
+    ],
+    "image_used": "data\\artwork_images\\ART_0155_0.jpg",
+    "corrected_description": "The construction of the Trojan Horse, with Greek soldiers including Epeus and Odysseus building the massive wooden horse outside the walls of Troy.",
+    "correction_note": "AI description replaced (was: The scene depicts the construction of the Trojan Horse, with figures including Laocoön (the bearded ...)"
+  },
+  "ART_0156": {
+    "description": "Neoptolemus stands over the altar, grasping the elderly Priam by the hair and preparing to strike him with a sword. Priam sits on the altar holding the body of his grandson, Astyanax, while a grieving woman stands nearby. Neoptolemus wears a crested helmet and a cuirass.",
+    "figures_found": [
+      "Astyanax",
+      "Neoptolemus",
+      "Priam"
+    ],
+    "validation_issues": [
+      "HALLUCINATION_RISK: Gemini mentions \"Astyanax\" but KG depicts (none in KG)",
+      "HALLUCINATION_RISK: Gemini mentions \"Neoptolemus\" but KG depicts (none in KG)",
+      "HALLUCINATION_RISK: Gemini mentions \"Priam\" but KG depicts (none in KG)"
+    ],
+    "image_used": "data\\artwork_images\\ART_0156_0.jpg"
+  },
+  "ART_0157": {
+    "description": "Aeneas carries his father, Anchises, while his son Ascanius and wife Creusa follow amidst a burning city. Aeneas wears armor and a cloak, while Anchises holds a golden statuette. The scene depicts their flight from Troy, characterized by classical robes, armor, and architectural ruins.",
+    "figures_found": [
+      "Aeneas",
+      "Anchises",
+      "Ascanius",
+      "Creusa"
+    ],
+    "validation_issues": [
+      "HALLUCINATION_RISK: Gemini mentions \"Aeneas\" but KG depicts (none in KG)",
+      "HALLUCINATION_RISK: Gemini mentions \"Anchises\" but KG depicts (none in KG)",
+      "HALLUCINATION_RISK: Gemini mentions \"Ascanius\" but KG depicts (none in KG)",
+      "HALLUCINATION_RISK: Gemini mentions \"Creusa\" but KG depicts (none in KG)"
+    ],
+    "image_used": "data\\artwork_images\\ART_0157_0.jpg"
+  },
+  "ART_0158": {
+    "description": "This sculpture depicts the figure of Odysseus (Ulysses) holding a small statuette of Athena, while a younger, bearded man sits below him draped in a lion skin. Odysseus is shown wearing a pilos cap and a beard, while the younger man is identified by the lion skin associated with Heracles.",
+    "figures_found": [
+      "Athena",
+      "Heracles",
+      "Odysseus",
+      "Ulysses"
+    ],
+    "validation_issues": [
+      "HALLUCINATION_RISK: Gemini mentions \"Athena\" but KG depicts (none in KG)",
+      "HALLUCINATION_RISK: Gemini mentions \"Heracles\" but KG depicts (none in KG)",
+      "HALLUCINATION_RISK: Gemini mentions \"Odysseus\" but KG depicts (none in KG)",
+      "HALLUCINATION_RISK: Gemini mentions \"Ulysses\" but KG depicts (none in KG)"
+    ],
+    "image_used": "data\\artwork_images\\ART_0158_0.jpg",
+    "corrected_description": "A marble sculpture by Bernini depicting Aeneas carrying his father Anchises, with the household gods, fleeing the burning city of Troy.",
+    "correction_note": "AI description replaced (was: This sculpture depicts the figure of Odysseus (Ulysses) holding a small statuette of Athena, while a...)"
+  },
+  "ART_0159": {
+    "description": "This is the François Vase, a black-figure volute krater. The upper frieze depicts the Calydonian Boar Hunt featuring Meleager, Peleus, and Atalanta. Below, chariots are driven by figures including Diomedes and Automedon, while other registers show a wedding procession and sphinxes.",
+    "figures_found": [
+      "Atalanta",
+      "Automedon",
+      "Boar",
+      "Diomedes",
+      "Meleager",
+      "Peleus"
+    ],
+    "validation_issues": [
+      "HALLUCINATION_RISK: Gemini mentions \"Atalanta\" but KG depicts (none in KG)",
+      "HALLUCINATION_RISK: Gemini mentions \"Automedon\" but KG depicts (none in KG)",
+      "HALLUCINATION_RISK: Gemini mentions \"Boar\" but KG depicts (none in KG)",
+      "HALLUCINATION_RISK: Gemini mentions \"Diomedes\" but KG depicts (none in KG)",
+      "HALLUCINATION_RISK: Gemini mentions \"Meleager\" but KG depicts (none in KG)",
+      "HALLUCINATION_RISK: Gemini mentions \"Peleus\" but KG depicts (none in KG)"
+    ],
+    "image_used": "data\\artwork_images\\ART_0159_0.jpg"
+  },
+  "ART_0161": {
+    "description": "This black-figure vase depicts Heracles (right) wrestling the Nemean lion, while two figures stand to the left. Heracles is shown kneeling and grappling with the beast, which is partially visible at the bottom. The figures wear short tunics and are surrounded by decorative floral motifs.",
+    "figures_found": [
+      "Heracles",
+      "Nemean Lion"
+    ],
+    "validation_issues": [
+      "HALLUCINATION_RISK: Gemini mentions \"Heracles\" but KG depicts (none in KG)",
+      "HALLUCINATION_RISK: Gemini mentions \"Nemean Lion\" but KG depicts (none in KG)"
+    ],
+    "image_used": "data\\artwork_images\\ART_0161_0.jpg",
+    "corrected_description": "A Proto-Attic vase showing Odysseus and his companions driving a burning stake into the eye of the Cyclops Polyphemus, who sits holding a wine cup.",
+    "correction_note": "AI description replaced (was: This black-figure vase depicts Heracles (right) wrestling the Nemean lion, while two figures stand t...)"
+  },
+  "ART_0162": {
+    "description": "The upper register depicts Odysseus and his men blinding the Cyclops Polyphemus, while the lower register shows a warrior, likely Odysseus, departing or arriving between two women. The figures wear tunics and cloaks, with the Cyclops identified by his single eye and the stake used as a weapon.",
+    "figures_found": [
+      "Cyclops",
+      "Odysseus",
+      "Polyphemus"
+    ],
+    "validation_issues": [
+      "HALLUCINATION_RISK: Gemini mentions \"Cyclops\" but KG depicts (none in KG)",
+      "HALLUCINATION_RISK: Gemini mentions \"Odysseus\" but KG depicts (none in KG)",
+      "HALLUCINATION_RISK: Gemini mentions \"Polyphemus\" but KG depicts (none in KG)"
+    ],
+    "image_used": "data\\artwork_images\\ART_0162_0.jpg",
+    "corrected_description": "An Attic red-figure krater depicting Odysseus threatening Circe with a sword as she flees. Two of Odysseus's men, transformed into pigs, appear in the background.",
+    "correction_note": "AI description replaced (was: The upper register depicts Odysseus and his men blinding the Cyclops Polyphemus, while the lower reg...)"
+  },
+  "ART_0163": {
+    "description": "Odysseus is tied to the mast of a ship while his crew rows past two Sirens perched on rocky cliffs. The Sirens are depicted as bird-women with wings and human heads, while Odysseus is shown bound by ropes to the central mast. The ship features an oculus on the prow and a steering oar.",
+    "figures_found": [
+      "Odysseus",
+      "Sirens"
+    ],
+    "validation_issues": [
+      "HALLUCINATION_RISK: Gemini mentions \"Odysseus\" but KG depicts (none in KG)",
+      "HALLUCINATION_RISK: Gemini mentions \"Sirens\" but KG depicts (none in KG)"
+    ],
+    "image_used": "data\\artwork_images\\ART_0163_0.jpg"
+  },
+  "ART_0164": {
+    "description": "The scene depicts a bearded, nude figure holding a bow and arrow, likely Apollo, approaching a central female figure wearing a peplos and a tall, ornate headdress (polos). A draped male figure and a winged female figure stand to the right. The figures are rendered in red-figure style.",
+    "figures_found": [
+      "Apollo"
+    ],
+    "validation_issues": [
+      "HALLUCINATION_RISK: Gemini mentions \"Apollo\" but KG depicts (none in KG)"
+    ],
+    "image_used": "data\\artwork_images\\ART_0164_0.jpg",
+    "corrected_description": "A red-figure amphora showing Odysseus as a suppliant holding olive branches, with Athena standing between him and Nausicaä. Laundry hangs on a tree.",
+    "correction_note": "AI description replaced (was: The scene depicts a bearded, nude figure holding a bow and arrow, likely Apollo, approaching a centr...)"
+  },
+  "ART_0165": {
+    "description": "Odysseus stands in the center, gesturing toward Penelope, who sits at a loom. The scene depicts the reunion of the couple in Ithaca, surrounded by attendants and a parrot. Odysseus wears a tunic and cap, while Penelope is dressed in a green gown near a window showing a ship at sea.",
+    "figures_found": [
+      "Odysseus",
+      "Penelope"
+    ],
+    "validation_issues": [
+      "HALLUCINATION_RISK: Gemini mentions \"Odysseus\" but KG depicts (none in KG)",
+      "HALLUCINATION_RISK: Gemini mentions \"Penelope\" but KG depicts (none in KG)"
+    ],
+    "image_used": "data\\artwork_images\\ART_0165_0.jpg"
+  },
+  "ART_0168": {
+    "description": "A woman in a red cloak stands in a garden, looking toward a doorway where a group of armored figures and a person in blue robes gather near a construction site. The scene depicts a moment of observation or anticipation. The woman wears a draped red garment over a dark tunic.",
+    "figures_found": [],
+    "validation_issues": [],
+    "image_used": "data\\artwork_images\\ART_0168_0.jpg",
+    "corrected_description": "An oil painting by Edward Burne-Jones showing Danaë watching as her prison, the brazen tower, is being raised. She wears a red cloak in a garden setting.",
+    "correction_note": "AI description replaced (was: A woman in a red cloak stands in a garden, looking toward a doorway where a group of armored figures...)"
+  },
+  "ART_0169": {
+    "description": "This painting depicts the severed head of Medusa. Her face is frozen in a scream of shock, with blood dripping from her neck. Her hair is composed of a writhing mass of snakes, which are the primary identifying attribute of this Gorgon.",
+    "figures_found": [
+      "Gorgon",
+      "Medusa"
+    ],
+    "validation_issues": [
+      "HALLUCINATION_RISK: Gemini mentions \"Gorgon\" but KG depicts (none in KG)",
+      "HALLUCINATION_RISK: Gemini mentions \"Medusa\" but KG depicts (none in KG)"
+    ],
+    "image_used": "data\\artwork_images\\ART_0169_0.jpg"
+  },
+  "ART_0170": {
+    "description": "This lekythos depicts Eos (the Dawn) and Tithonos standing on either side of a chest from which the infant Phaethon emerges. Eos wears a peplos and headband, while Tithonos holds a spear. The scene features a decorated chest adorned with small animal figures.",
+    "figures_found": [
+      "Eos"
+    ],
+    "validation_issues": [
+      "HALLUCINATION_RISK: Gemini mentions \"Eos\" but KG depicts (none in KG)"
+    ],
+    "image_used": "data\\artwork_images\\ART_0170_0.jpg",
+    "corrected_description": "An Attic red-figure lekythos showing Danaë and the infant Perseus in a chest, with Acrisius looking on. The scene depicts their abandonment at sea.",
+    "correction_note": "AI description replaced (was: This lekythos depicts Eos (the Dawn) and Tithonos standing on either side of a chest from which the ...)"
+  },
+  "ART_0171": {
+    "description": "This relief depicts Heracles beheading the Gorgon Medusa, who holds the winged horse Pegasus. Heracles wears a short tunic and wields a sword, while a figure, likely Athena, stands to the left. Medusa is shown with a grotesque face, snakes for hair, and a small horse at her chest.",
+    "figures_found": [
+      "Athena",
+      "Gorgon",
+      "Heracles",
+      "Medusa",
+      "Pegasus"
+    ],
+    "validation_issues": [
+      "HALLUCINATION_RISK: Gemini mentions \"Athena\" but KG depicts (none in KG)",
+      "HALLUCINATION_RISK: Gemini mentions \"Gorgon\" but KG depicts (none in KG)",
+      "HALLUCINATION_RISK: Gemini mentions \"Heracles\" but KG depicts (none in KG)",
+      "HALLUCINATION_RISK: Gemini mentions \"Medusa\" but KG depicts (none in KG)",
+      "HALLUCINATION_RISK: Gemini mentions \"Pegasus\" but KG depicts (none in KG)"
+    ],
+    "image_used": "data\\artwork_images\\ART_0171_0.jpg",
+    "corrected_description": "A limestone metope from Selinus showing Perseus beheading the sleeping Medusa while Athena stands by. Pegasus springs from Medusa's body.",
+    "correction_note": "AI description replaced (was: This relief depicts Heracles beheading the Gorgon Medusa, who holds the winged horse Pegasus. Heracl...)"
+  },
+  "ART_0172": {
+    "description": "The painting depicts Andromeda chained to a rock, while Perseus descends from the sky to battle the sea monster Cetus. Perseus wears winged sandals and carries a curved blade, while Andromeda is nude and shackled. The scene captures the moment before the hero strikes the beast.",
+    "figures_found": [
+      "Andromeda",
+      "Perseus"
+    ],
+    "validation_issues": [
+      "HALLUCINATION_RISK: Gemini mentions \"Andromeda\" but KG depicts (none in KG)",
+      "HALLUCINATION_RISK: Gemini mentions \"Perseus\" but KG depicts (none in KG)"
+    ],
+    "image_used": "data\\artwork_images\\ART_0172_0.jpg"
+  },
+  "ART_0173": {
+    "description": "Heracles is depicted confronting a large sea monster, likely the Ketos. The hero, shown nude, prepares to strike the creature with a sickle-like weapon while dolphins and an octopus swim nearby. The scene is rendered in black-figure style on a decorated ceramic vessel.",
+    "figures_found": [
+      "Heracles"
+    ],
+    "validation_issues": [
+      "HALLUCINATION_RISK: Gemini mentions \"Heracles\" but KG depicts (none in KG)"
+    ],
+    "image_used": "data\\artwork_images\\ART_0173_0.jpg",
+    "corrected_description": "An Etruscan black-figure hydria showing Perseus attacking the sea-monster with a scimitar to rescue Andromeda.",
+    "correction_note": "AI description replaced (was: Heracles is depicted confronting a large sea monster, likely the Ketos. The hero, shown nude, prepar...)"
+  },
+  "ART_0174": {
+    "description": "The bronze statue depicts Perseus holding the severed head of Medusa. He is shown standing triumphantly, brandishing a curved sword (harpe) in his right hand. He wears winged sandals and a winged helmet, which are key attributes of the hero.",
+    "figures_found": [
+      "Medusa",
+      "Perseus"
+    ],
+    "validation_issues": [
+      "HALLUCINATION_RISK: Gemini mentions \"Medusa\" but KG depicts (none in KG)",
+      "HALLUCINATION_RISK: Gemini mentions \"Perseus\" but KG depicts (none in KG)"
+    ],
+    "image_used": "data\\artwork_images\\ART_0174_0.jpg"
+  },
+  "ART_0175": {
+    "description": "Perseus, Athena, and the severed head of Medusa are depicted. Perseus and Athena gaze into a reflective pool, where the reflection of Medusa’s head is visible. Perseus wears polished plate armor, while Athena is draped in a dark blue robe and mantle.",
+    "figures_found": [
+      "Athena",
+      "Medusa",
+      "Perseus"
+    ],
+    "validation_issues": [
+      "HALLUCINATION_RISK: Gemini mentions \"Athena\" but KG depicts (none in KG)",
+      "HALLUCINATION_RISK: Gemini mentions \"Medusa\" but KG depicts (none in KG)",
+      "HALLUCINATION_RISK: Gemini mentions \"Perseus\" but KG depicts (none in KG)"
+    ],
+    "image_used": "data\\artwork_images\\ART_0175_0.jpg"
+  },
+  "ART_0176": {
+    "description": "Bellerophon rides the winged horse Pegasus, thrusting a spear into the Chimera below. The figure wears a cloak and tunic, while the hybrid monster features a lion's head and a serpent-like tail. The scene is framed by an architectural border with a stylized tree.",
+    "figures_found": [
+      "Bellerophon",
+      "Chimera",
+      "Pegasus",
+      "Serpent"
+    ],
+    "validation_issues": [
+      "HALLUCINATION_RISK: Gemini mentions \"Bellerophon\" but KG depicts (none in KG)",
+      "HALLUCINATION_RISK: Gemini mentions \"Chimera\" but KG depicts (none in KG)",
+      "HALLUCINATION_RISK: Gemini mentions \"Pegasus\" but KG depicts (none in KG)",
+      "HALLUCINATION_RISK: Gemini mentions \"Serpent\" but KG depicts (none in KG)"
+    ],
+    "image_used": "data\\artwork_images\\ART_0176_0.jpg"
+  },
+  "ART_0178": {
+    "description": "Heracles stands on the left, wearing a lion skin and holding a club, while the multi-headed Lernaean Hydra looms on the right over a fallen figure. Heracles prepares to battle the monster in a rocky, desolate landscape at sunset. He carries a bow and quiver, and the Hydra has many heads.",
+    "figures_found": [
+      "Heracles",
+      "Hydra",
+      "Lernaean Hydra"
+    ],
+    "validation_issues": [
+      "HALLUCINATION_RISK: Gemini mentions \"Heracles\" but KG depicts (none in KG)",
+      "HALLUCINATION_RISK: Gemini mentions \"Hydra\" but KG depicts (none in KG)",
+      "HALLUCINATION_RISK: Gemini mentions \"Lernaean Hydra\" but KG depicts (none in KG)"
+    ],
+    "image_used": "data\\artwork_images\\ART_0178_0.jpg",
+    "corrected_description": "Hercules stands on the left, wearing a lion skin and holding a club, while the multi-headed Lernaean Hydra looms on the right over a fallen figure. Hercules prepares to battle the monster in a rocky, desolate landscape at sunset. He carries a bow and quiver, and the Hydra has many heads.",
+    "correction_note": "Name corrections applied: Heracles→Hercules"
+  },
+  "ART_0180": {
+    "description": "This relief depicts Athena, Heracles, and Atlas. Heracles is holding up the sky, assisted by Athena, while Atlas offers him the golden apples of the Hesperides. Athena wears a peplos, Heracles is nude, and Atlas is depicted with a beard and a cap.",
+    "figures_found": [
+      "Athena",
+      "Atlas",
+      "Heracles",
+      "Hesperides"
+    ],
+    "validation_issues": [
+      "HALLUCINATION_RISK: Gemini mentions \"Athena\" but KG depicts (none in KG)",
+      "HALLUCINATION_RISK: Gemini mentions \"Atlas\" but KG depicts (none in KG)",
+      "HALLUCINATION_RISK: Gemini mentions \"Heracles\" but KG depicts (none in KG)",
+      "HALLUCINATION_RISK: Gemini mentions \"Hesperides\" but KG depicts (none in KG)"
+    ],
+    "image_used": "data\\artwork_images\\ART_0180_0.jpg"
+  },
+  "ART_0181": {
+    "description": "Heracles, wearing a lion skin, drags the multi-headed hound Cerberus toward a terrified King Eurystheus, who hides inside a large pithos (storage jar). Heracles holds a club, while the dog features multiple heads and snakes protruding from its body.",
+    "figures_found": [
+      "Cerberus",
+      "Eurystheus",
+      "Heracles"
+    ],
+    "validation_issues": [
+      "HALLUCINATION_RISK: Gemini mentions \"Cerberus\" but KG depicts (none in KG)",
+      "HALLUCINATION_RISK: Gemini mentions \"Eurystheus\" but KG depicts (none in KG)",
+      "HALLUCINATION_RISK: Gemini mentions \"Heracles\" but KG depicts (none in KG)"
+    ],
+    "image_used": "data\\artwork_images\\ART_0181_0.jpg"
+  },
+  "ART_0182": {
+    "description": "The painting depicts Hylas being pulled into a pond by seven water nymphs. The youth wears a blue tunic with a red sash and carries a water pitcher, while the nymphs are partially submerged among lily pads, adorned with small flowers in their hair.",
+    "figures_found": [
+      "Hylas",
+      "nymphs"
+    ],
+    "validation_issues": [
+      "HALLUCINATION_RISK: Gemini mentions \"Hylas\" but KG depicts (none in KG)",
+      "HALLUCINATION_RISK: Gemini mentions \"nymphs\" but KG depicts (none in KG)"
+    ],
+    "image_used": "data\\artwork_images\\ART_0182_0.jpg"
+  },
+  "ART_0188": {
+    "description": "This statue depicts Heracles resting after his labors. He leans heavily on his club, which is draped with the Nemean lion skin. The muscular figure appears weary, with his head bowed and his hand resting behind his back.",
+    "figures_found": [
+      "Heracles",
+      "Nemean Lion"
+    ],
+    "validation_issues": [
+      "HALLUCINATION_RISK: Gemini mentions \"Heracles\" but KG depicts (none in KG)",
+      "HALLUCINATION_RISK: Gemini mentions \"Nemean Lion\" but KG depicts (none in KG)"
+    ],
+    "image_used": "data\\artwork_images\\ART_0188_0.jpg"
+  },
+  "ART_0190": {
+    "description": "The painting depicts Aphrodite and her attendants, including Eros, gathered around a basket containing the infant Adonis. A statue of Aphrodite stands in the background near a fountain. The figures are partially draped in flowing fabrics, and a small dog sits near an ornate vessel.",
+    "figures_found": [
+      "Adonis",
+      "Aphrodite",
+      "Eros"
+    ],
+    "validation_issues": [
+      "HALLUCINATION_RISK: Gemini mentions \"Adonis\" but KG depicts (none in KG)",
+      "HALLUCINATION_RISK: Gemini mentions \"Aphrodite\" but KG depicts (none in KG)",
+      "HALLUCINATION_RISK: Gemini mentions \"Eros\" but KG depicts (none in KG)"
+    ],
+    "image_used": "data\\artwork_images\\ART_0190_0.jpg",
+    "corrected_description": "An oil painting by Peter Paul Rubens showing the discovery of the infant Erichthonius. Aglauros opens the basket containing the snake-tailed baby, revealing him to her sisters Pandrosos and Herse.",
+    "correction_note": "AI description replaced (was: The painting depicts Aphrodite and her attendants, including Eros, gathered around a basket containi...)"
+  },
+  "ART_0191": {
+    "description": "The painting depicts Perseus, Andromeda, and Eros, with a river god reclining in the foreground and Pegasus standing nearby. Perseus, draped in a blue cloth, gestures toward Andromeda as Eros holds a mirror reflecting the Gorgon's head. Pegasus is identified by his prominent wings.",
+    "figures_found": [
+      "Andromeda",
+      "Eros",
+      "Gorgon",
+      "Pegasus",
+      "Perseus"
+    ],
+    "validation_issues": [
+      "HALLUCINATION_RISK: Gemini mentions \"Andromeda\" but KG depicts (none in KG)",
+      "HALLUCINATION_RISK: Gemini mentions \"Eros\" but KG depicts (none in KG)",
+      "HALLUCINATION_RISK: Gemini mentions \"Gorgon\" but KG depicts (none in KG)",
+      "HALLUCINATION_RISK: Gemini mentions \"Pegasus\" but KG depicts (none in KG)",
+      "HALLUCINATION_RISK: Gemini mentions \"Perseus\" but KG depicts (none in KG)"
+    ],
+    "image_used": "data\\artwork_images\\ART_0191_0.jpg",
+    "corrected_description": "An oil painting by Nicolas Poussin showing Cephalus gazing at a portrait of Procris held by Cupid, resisting the advances of Aurora. Pegasus and a river god appear in the background.",
+    "correction_note": "AI description replaced (was: The painting depicts Perseus, Andromeda, and Eros, with a river god reclining in the foreground and ...)"
+  },
+  "ART_0192": {
+    "description": "King Herod sits on a throne, recoiling as Salome presents the severed head of John the Baptist on a platter. Salome is accompanied by Herodias, who holds a staff. The figures are dressed in classical-style robes, with Herod wearing a turban and the women in draped garments.",
+    "figures_found": [
+      "Herodias",
+      "John the Baptist",
+      "Salome"
+    ],
+    "validation_issues": [
+      "HALLUCINATION_RISK: Gemini mentions \"Herodias\" but KG depicts (none in KG)",
+      "HALLUCINATION_RISK: Gemini mentions \"John the Baptist\" but KG depicts (none in KG)",
+      "HALLUCINATION_RISK: Gemini mentions \"Salome\" but KG depicts (none in KG)"
+    ],
+    "image_used": "data\\artwork_images\\ART_0192_0.jpg",
+    "corrected_description": "An oil painting by Peter Paul Rubens depicting the banquet of Tereus. Procne reveals the severed head of her son Itys to Tereus, with Philomela standing behind her. The scene is a revenge for Tereus's crimes.",
+    "correction_note": "AI description replaced (was: King Herod sits on a throne, recoiling as Salome presents the severed head of John the Baptist on a ...)"
+  },
+  "ART_0194": {
+    "description": "This red-figure kylix depicts Athena standing before a seated, helmeted warrior, likely Achilles, while a youth stands to the left. Athena wears a crested helmet and an aegis, holding a spear, while the warrior is draped in a cloak. A small dolphin is visible in the lower left field.",
+    "figures_found": [
+      "Achilles",
+      "Athena"
+    ],
+    "validation_issues": [
+      "HALLUCINATION_RISK: Gemini mentions \"Achilles\" but KG depicts (none in KG)",
+      "HALLUCINATION_RISK: Gemini mentions \"Athena\" but KG depicts (none in KG)"
+    ],
+    "image_used": "data\\artwork_images\\ART_0194_0.jpg",
+    "corrected_description": "An Attic red-figure cup showing Theseus held underwater by Amphitrite, who crowns him with a wreath. Athena stands by, and Triton looks on.",
+    "correction_note": "AI description replaced (was: This red-figure kylix depicts Athena standing before a seated, helmeted warrior, likely Achilles, wh...)"
+  },
+  "ART_0195": {
+    "description": "A woman holding a spear and a mirror stands before a wounded Minotaur. The woman wears a laurel wreath, while the Minotaur is pierced by an arrow in his neck. The scene depicts the Minotaur gazing at his reflection in the mirror held by the woman.",
+    "figures_found": [
+      "Minotaur"
+    ],
+    "validation_issues": [
+      "HALLUCINATION_RISK: Gemini mentions \"Minotaur\" but KG depicts (none in KG)"
+    ],
+    "image_used": "data\\artwork_images\\ART_0195_0.jpg"
+  },
+  "ART_0196": {
+    "description": "The relief depicts a Dionysian procession featuring Dionysos riding a chariot pulled by centaurs, accompanied by satyrs, maenads, and Eros. The scene shows a lively, musical revelry with figures playing pipes and drums, while a reclining woman rests on the right. Attributes include a thyrsos.",
+    "figures_found": [
+      "Centaurs",
+      "Eros",
+      "Maenads",
+      "Satyrs"
+    ],
+    "validation_issues": [
+      "HALLUCINATION_RISK: Gemini mentions \"Centaurs\" but KG depicts (none in KG)",
+      "HALLUCINATION_RISK: Gemini mentions \"Eros\" but KG depicts (none in KG)",
+      "HALLUCINATION_RISK: Gemini mentions \"Maenads\" but KG depicts (none in KG)",
+      "HALLUCINATION_RISK: Gemini mentions \"Satyrs\" but KG depicts (none in KG)"
+    ],
+    "image_used": "data\\artwork_images\\ART_0196_0.jpg",
+    "corrected_description": "The relief depicts a Dionysian procession featuring Dionysos riding a chariot pulled by centaurs, accompanied by satyrs, maenads, and Eros. The scene shows a lively, musical revelry with figures playing pipes and drums, while a reclining woman rests on the right. Attributes include a thyrsos. (scene also includes: Dionysus, Ariadne)",
+    "correction_note": "Added missing figures: Dionysus, Ariadne"
+  },
+  "ART_0197": {
+    "description": "This relief depicts Dionysos reclining with Ariadne. The god rests against the woman, who holds a veil above her head, while grapevines with silver leaves frame the scene. Dionysos is identified by his relaxed, reclining posture and the surrounding viticulture symbols.",
+    "figures_found": [
+      "Ariadne"
+    ],
+    "validation_issues": [
+      "HALLUCINATION_RISK: Gemini mentions \"Ariadne\" but KG depicts (none in KG)"
+    ],
+    "image_used": "data\\artwork_images\\ART_0197_0.jpg",
+    "corrected_description": "This relief depicts Dionysos reclining with Ariadne. The god rests against the woman, who holds a veil above her head, while grapevines with silver leaves frame the scene. Dionysos is identified by his relaxed, reclining posture and the surrounding viticulture symbols. (scene also includes: Dionysus)",
+    "correction_note": "Added missing figures: Dionysus"
+  },
+  "ART_0200": {
+    "description": "Athena sits on a stool, holding a spear and wearing a helmet, with an owl perched behind her. She watches as a bearded man, likely Odysseus, assists a second helmeted figure into a boat. The scene depicts the preparation for a voyage, featuring a shield, spear, and nautical vessel.",
+    "figures_found": [
+      "Athena",
+      "Odysseus"
+    ],
+    "validation_issues": [
+      "HALLUCINATION_RISK: Gemini mentions \"Athena\" but KG depicts (none in KG)",
+      "HALLUCINATION_RISK: Gemini mentions \"Odysseus\" but KG depicts (none in KG)"
+    ],
+    "image_used": "data\\artwork_images\\ART_0200_0.jpg",
+    "corrected_description": "A terra-cotta relief showing Athena helping a workman raise a sail on the Argo, while Argus works on the stern of the ship.",
+    "correction_note": "AI description replaced (was: Athena sits on a stool, holding a spear and wearing a helmet, with an owl perched behind her. She wa...)"
+  },
+  "ART_0201": {
+    "description": "This red-figure kylix depicts Athena standing before a large, scaly serpent that is disgorging the hero Jason. Athena wears a crested helmet and an aegis featuring a Gorgoneion, while the serpent is coiled around a tree. The scene captures the moment of Jason's rescue from the dragon.",
+    "figures_found": [
+      "Athena",
+      "Jason",
+      "Serpent"
+    ],
+    "validation_issues": [
+      "HALLUCINATION_RISK: Gemini mentions \"Athena\" but KG depicts (none in KG)",
+      "HALLUCINATION_RISK: Gemini mentions \"Jason\" but KG depicts (none in KG)",
+      "HALLUCINATION_RISK: Gemini mentions \"Serpent\" but KG depicts (none in KG)"
+    ],
+    "image_used": "data\\artwork_images\\ART_0201_0.jpg"
+  },
+  "ART_0205": {
+    "description": "This red-figure vase depicts Medea stabbing her son, Mermerus, in front of a column topped by a small statue of Eros. Medea wears an ornate, patterned chiton and jewelry, while the child is draped in a simple garment. The scene captures the tragic moment of filicide.",
+    "figures_found": [
+      "Eros",
+      "Medea"
+    ],
+    "validation_issues": [
+      "HALLUCINATION_RISK: Gemini mentions \"Eros\" but KG depicts (none in KG)",
+      "HALLUCINATION_RISK: Gemini mentions \"Medea\" but KG depicts (none in KG)"
+    ],
+    "image_used": "data\\artwork_images\\ART_0205_0.jpg"
+  }
+}

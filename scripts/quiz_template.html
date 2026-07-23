@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>Mythos AI — 知识测验</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Segoe UI,sans-serif;background:#0a0a1a;color:#eee;padding:20px}
+.c{max-width:900px;margin:0 auto}
+h1{color:#F5D742;font-size:24px;margin-bottom:4px}
+.st{color:#666;font-size:13px;margin-bottom:16px}
+.ctrls{display:flex;gap:6px;margin-bottom:12px;flex-wrap:wrap}
+.ctrls button{padding:6px 14px;border:1px solid #333;background:#111128;color:#999;border-radius:5px;cursor:pointer;font-size:12px}
+.ctrls button:hover{background:#F5D742;color:#111}
+.ctrls button.on{background:#F5D742;color:#111;font-weight:bold}
+.sb{display:flex;justify-content:space-between;font-size:13px;color:#888;margin-bottom:12px;padding-bottom:6px;border-bottom:1px solid #2a2a4a}
+.q{background:#111128;border:1px solid #2a2a4a;border-radius:8px;padding:14px 16px;margin-bottom:10px}
+.q.hide{display:none}
+.qh{font-size:10px;color:#555;margin-bottom:4px}
+.qt{font-size:15px;margin-bottom:10px;line-height:1.5}
+.opts{display:flex;flex-direction:column;gap:5px}
+.opts label{display:flex;align-items:center;gap:8px;padding:7px 12px;border:1px solid #2a2a4a;border-radius:5px;cursor:pointer;font-size:13px}
+.opts label:hover{border-color:#555}
+.opts label.ok{border-color:#2ecc71;background:rgba(46,204,113,0.1);opacity:0.7;cursor:default}
+.opts label.no{border-color:#e74c3c;background:rgba(231,76,60,0.1);opacity:0.7;cursor:default}
+.tfs{display:flex;gap:8px}
+.tfs button{padding:7px 28px;border:1px solid #333;border-radius:5px;cursor:pointer;font-size:14px;background:#1a1a3e;color:#bbb}
+.tfs button:hover{border-color:#F5D742}
+.tfs button.ok{border-color:#2ecc71;background:rgba(46,204,113,0.2);color:#2ecc71}
+.tfs button.no{border-color:#e74c3c;background:rgba(231,76,60,0.2);color:#e74c3c}
+.sai{width:100%;padding:9px 12px;border:1px solid #333;border-radius:5px;background:#1a1a3e;color:#eee;font-size:14px;outline:0}
+.sai:focus{border-color:#F5D742}
+.sai.ok{border-color:#2ecc71}
+.sai.no{border-color:#e74c3c}
+.ma{display:flex;gap:16px;justify-content:center;flex-wrap:wrap}
+.mc{display:flex;flex-direction:column;gap:5px}
+.mi{padding:7px 18px;border:1px solid #2a2a4a;border-radius:5px;font-size:13px;text-align:center;min-width:110px;background:#1a1a3e;cursor:pointer}
+.mi:hover{border-color:#F5D742}
+.mi.sel{border-color:#F5D742;background:rgba(245,215,66,0.1)}
+.mi.used{border-color:#555;background:rgba(85,85,85,0.1);cursor:default}
+.mi.done{border-color:#2ecc71;background:rgba(46,204,113,0.1);cursor:default}
+.mi.wr{border-color:#e74c3c;background:rgba(231,76,60,0.1)}
+.exp{display:none;margin-top:10px;padding:10px 14px;background:rgba(245,215,66,0.04);border:1px solid rgba(245,215,66,0.15);border-radius:5px;font-size:13px;color:#bbb;line-height:1.5}
+.exp .rf{color:#555;font-size:11px;margin-top:3px}
+.hlp{font-size:11px;color:#555;margin-top:5px}
+.ok-badge{color:#2ecc71;font-size:12px;margin-left:6px}
+.no-badge{color:#e74c3c;font-size:12px;margin-left:6px}
+</style>
+</head>
+<body>
+<div class="c">
+<h1>Mythos AI — 知识测验</h1>
+<div class="st">基于教材 Classical Mythology 生成 · 所有题目均可溯源</div>
+<div class="ctrls" id="ctrls"></div>
+<div class="sb" id="sb"><span>准备就绪</span><span></span></div>
+<div id="qz"></div>
+</div>
+<script>
+var ALL_SETS = /* ALL_SETS */;
+var QUESTIONS = ALL_SETS[0];
+(function(){
+var A = {}, S = {ok:0, tot:0}, T = {mc:"选择题",tf:"判断题",sa:"简答题",match:"匹配题"};
+
+function esc(s){return s.replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/'/g,"&#39;")}
+
+function render(){
+  var h = "";
+  QUESTIONS.forEach(function(q,i){
+    h += '<div class="q '+q.t+'" data-i="'+i+'">';
+    h += '<div class="qh">'+T[q.t]+' \u00b7 '+esc(q.cat)+'</div>';
+    h += '<div class="qt">'+(i+1)+'. '+esc(q.q)+'</div>';
+
+    if(q.t==="mc"){
+      h += '<div class="opts">';
+      q.opts.forEach(function(o){
+        var cls = "", tag = "";
+        if(A[i]!==void 0){
+          cls = o===q.ans?"ok":"no";
+          tag = o===q.ans?' <span class="ok-badge">&#10003;</span>':(A[i]===o?' <span class="no-badge">&#10007;</span>':"");
+        }
+        h += '<label class="'+cls+'" data-i="'+i+'" data-v="'+esc(o)+'"><input type="radio" name="q'+i+'"'+(A[i]!==void 0?" disabled":"")+">"+esc(o)+tag+"</label>";
+      });
+      h += "</div>";
+    }
+
+    if(q.t==="tf"){
+      h += '<div class="tfs">';
+      [["True","\u2713 \u6b63\u786e"],["False","\u2717 \u9519\u8bef"]].forEach(function(pair){
+        var v = pair[0], label = pair[1];
+        var cls = "";
+        if(A[i]!==void 0){
+          cls = (v==="True")===q.ans?"ok":"no";
+        }
+        h += '<button class="'+cls+'" data-i="'+i+'" data-v="'+v+'"'+(A[i]!==void 0?" disabled":"")+">"+label+"</button>";
+      });
+      h += "</div>";
+      if(A[i]!==void 0){
+        var userOk = (A[i]==="True")===q.ans;
+        h += '<div style="margin-top:6px;font-size:13px">'+(userOk?'<span style="color:#2ecc71">\u2713 \u56de\u7b54\u6b63\u786e</span>':'<span style="color:#e74c3c">\u2717 \u56de\u7b54\u9519\u8bef</span>')+'</div>';
+      }
+    }
+
+    if(q.t==="sa"){
+      var val = A[i]!==void 0 ? A[i] : "";
+      var ic = "sai";
+      if(A[i]!==void 0) ic += val.toLowerCase()===q.ans.toLowerCase()?" ok":" no";
+      h += '<input class="'+ic+'" type="text" value="'+esc(val)+'" placeholder="\u8f93\u5165\u7b54\u6848..." data-i="'+i+'"'+(A[i]!==void 0?" disabled":"")+">";
+      if(A[i]!==void 0){
+        h += '<span style="margin-left:6px">'+(val.toLowerCase()===q.ans.toLowerCase()?'<span class="ok-badge">&#10003;</span>':'<span class="no-badge">&#10007; '+esc(q.ans)+"</span>")+"</span>";
+      }
+    }
+
+    if(q.t==="match"){
+      if(A[i]&&A[i].alldone){
+        h += '<div style="display:flex;flex-direction:column;gap:4px">';
+        q.left.forEach(function(it,li){
+          var matched = A[i].m[li];
+          var correct = q.ans[it];
+          var ok = matched === correct;
+          var bc = ok?"#2ecc71":"#e74c3c";
+          h += '<div style="display:flex;flex-wrap:wrap;align-items:center;gap:6px;padding:7px 12px;border:1px solid '+bc+';border-radius:5px;font-size:13px">';
+          h += '<span style="min-width:90px">'+esc(it)+'</span>';
+          h += '<span style="color:#555">→</span>';
+          h += '<span style="color:'+(ok?"#2ecc71":"#e74c3c")+'">'+(ok?"\u2713 ":"\u2717 ")+esc(matched)+'</span>';
+          if(!ok) h += '<span style="color:#888;font-size:12px">(\u6b63\u786e: '+esc(correct)+')</span>';
+          h += '</div>';
+        });
+        h += '</div>';
+      } else {
+        h += '<div class="ma" data-i="'+i+'">';
+        h += '<div class="mc" data-side="L">';
+        q.left.forEach(function(it,li){
+          var cls = "mi";
+          if(A[i]&&A[i].m&&A[i].m[li]!==void 0) cls += " used";
+          h += '<div class="'+cls+'" data-si="'+li+'">'+esc(it)+"</div>";
+        });
+        h += '</div><div class="mc" data-side="R">';
+        q.right.forEach(function(it,ri){
+          var cls = "mi";
+          if(A[i]&&A[i].rm&&A[i].rm[ri]!==void 0) cls += " used";
+          h += '<div class="'+cls+'" data-si="'+ri+'">'+esc(it)+"</div>";
+        });
+        h += "</div></div>";
+        if(!A[i]) h += '<div class="hlp">\u70b9\u51fb\u5de6\u4fa7\uff0c\u518d\u70b9\u51fb\u53f3\u4fa7\u8fdb\u884c\u914d\u5bf9</div>';
+      }
+    }
+
+    h += '<div class="exp" id="ex-'+i+'"><div>'+esc(q.exp)+"</div>"+(q.ref?'<div class="rf">'+esc(q.ref)+"</div>":"")+"</div>";
+
+    if(A[i]===void 0 && q.t!=="match"){
+      h += '<button class="hlp" data-r="'+i+'">\u663e\u793a\u7b54\u6848</button>';
+    } else {
+      h += '<button class="hlp" data-t="'+i+'">\u89e3\u6790</button>';
+    }
+    h += "</div>";
+  });
+  document.getElementById("qz").innerHTML = h;
+  upd();
+  bindEvents();
+}
+
+function upd(){
+  document.getElementById("sb").innerHTML = "<span>\u5df2\u7b54: "+S.tot+"/"+QUESTIONS.length+" \u6b63\u786e: "+S.ok+"</span><span>"+(QUESTIONS.length>0?Math.round(S.tot/QUESTIONS.length*100):0)+"%</span>";
+}
+
+function bindEvents(){
+  // MC click via delegation
+  document.querySelectorAll("#qz .opts label").forEach(function(el){
+    el.onclick = function(){
+      var i = parseInt(this.getAttribute("data-i"));
+      if(A[i]!==void 0) return;
+      var v = this.getAttribute("data-v");
+      A[i] = v;
+      if(v===QUESTIONS[i].ans) S.ok++;
+      S.tot++;
+      render();
+      document.getElementById("ex-"+i).style.display="block";
+    };
+  });
+
+  // TF click
+  document.querySelectorAll("#qz .tfs button").forEach(function(el){
+    el.onclick = function(){
+      var i = parseInt(this.getAttribute("data-i"));
+      if(A[i]!==void 0) return;
+      var v = this.getAttribute("data-v");
+      A[i] = v;
+      if((v==="True")===QUESTIONS[i].ans) S.ok++;
+      S.tot++;
+      render();
+      document.getElementById("ex-"+i).style.display="block";
+    };
+  });
+
+  // SA keydown
+  document.querySelectorAll("#qz .sai").forEach(function(el){
+    el.onkeydown = function(e){
+      if(e.key!=="Enter") return;
+      var i = parseInt(this.getAttribute("data-i"));
+      if(A[i]!==void 0) return;
+      var v = this.value.trim();
+      if(!v) return;
+      A[i] = v;
+      if(v.toLowerCase()===QUESTIONS[i].ans.toLowerCase()) S.ok++;
+      S.tot++;
+      render();
+      document.getElementById("ex-"+i).style.display="block";
+    };
+  });
+
+  // Reveal / toggle explanation
+  document.querySelectorAll("#qz .hlp").forEach(function(el){
+    el.onclick = function(){
+      var r = this.getAttribute("data-r");
+      var t = this.getAttribute("data-t");
+      if(r!==null){
+        document.getElementById("ex-"+r).style.display="block";
+      } else if(t!==null){
+        var ex = document.getElementById("ex-"+t);
+        ex.style.display = ex.style.display==="none"?"block":"none";
+      }
+    };
+  });
+
+  // Matching clicks
+  var MS = {};
+  document.querySelectorAll("#qz .mi").forEach(function(el){
+    el.onclick = function(){
+      if(this.classList.contains("done")||this.classList.contains("wr")||this.classList.contains("used")) return;
+      var ma = this.closest(".ma");
+      var i = parseInt(ma.getAttribute("data-i"));
+      if(A[i]&&A[i].alldone) return;
+      var side = this.parentNode.getAttribute("data-side");
+      var si = parseInt(this.getAttribute("data-si"));
+      if(A[i]&&A[i].m){
+        if(side==="L"&&A[i].m[si]!==void 0) return;
+        if(side==="R"&&A[i].rm&&A[i].rm[si]!==void 0) return;
+      }
+      if(!MS[i]) MS[i]={};
+      if(side==="L"){
+        MS[i].L = si;
+        ma.querySelectorAll('.mc[data-side="L"] .mi').forEach(function(m){m.classList.remove("sel")});
+        this.classList.add("sel");
+      } else {
+        if(MS[i].L!==void 0){
+          var li = MS[i].L;
+          if(!A[i]) A[i]={m:{},rm:{}};
+          A[i].m[li] = QUESTIONS[i].right[si];
+          A[i].rm[si] = li;
+          delete MS[i].L;
+          ma.querySelectorAll('.mc[data-side="L"] .mi').forEach(function(m){m.classList.remove("sel")});
+          var done = QUESTIONS[i].left.every(function(it,li2){return A[i].m[li2]!==void 0});
+          if(done){
+            A[i].alldone = true;
+            var ok = QUESTIONS[i].left.every(function(it,li2){return A[i].m[li2]===QUESTIONS[i].ans[it]});
+            if(ok) S.ok++;
+            S.tot++;
+            render();
+            document.getElementById("ex-"+i).style.display="block";
+          } else {
+            render();
+          }
+        }
+      }
+    };
+  });
+}
+
+// Build filter buttons
+function buildFilters(){
+  var cats = {};
+  QUESTIONS.forEach(function(q){cats[q.t]=true});
+  var ctrls = document.getElementById("ctrls");
+  var btns = '<button class="on" data-f="all">\u5168\u90e8</button>';
+  for(var k in cats){
+    btns += '<button data-f="'+k+'">'+T[k]+'</button>';
+  }
+  btns += '<button id="tb">\u663e/\u9690\u7b54\u6848</button>';
+  btns += '<button id="sh">\u6362\u4e00\u6279</button>';
+  ctrls.innerHTML = btns;
+}
+buildFilters();
+
+ctrls.onclick = function(e){
+  var btn = e.target;
+  if(btn.id==="sh"){
+    A = {}; S = {ok:0, tot:0};
+    QUESTIONS = ALL_SETS[Math.floor(Math.random() * ALL_SETS.length)];
+    buildFilters();
+    render();
+    return;
+  }
+  if(btn.id==="tb"){
+    var all = document.querySelectorAll(".exp");
+    var vis = Array.from(all).some(function(e){return e.style.display!=="none"});
+    all.forEach(function(e){e.style.display=vis?"none":"block"});
+    return;
+  }
+  var f = btn.getAttribute("data-f");
+  if(!f) return;
+  document.querySelectorAll(".q").forEach(function(el){el.style.display=(f==="all"||el.classList.contains(f))?"block":"none"});
+  ctrls.querySelectorAll("button").forEach(function(b){b.classList.remove("on")});
+  btn.classList.add("on");
+};
+
+render();
+})();
+</script>
+</body>
+</html>

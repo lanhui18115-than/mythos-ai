@@ -1,0 +1,31 @@
+# 环境变量（含 API Key）
+.env
+
+# 教材 PDF（版权文件）
+textbook/*.pdf
+
+# 提取的章节文字
+data/chapter_texts/
+
+# 提取的知识 JSON
+data/knowledge/
+
+# 页码映射
+data/page_mapping.json
+
+# 提取的艺术品图片（体积大，从教材生成）
+data/artwork_images/
+
+# LLM API 调用缓存（本地生成）
+data/llm_cache.json
+
+# Python 缓存
+__pycache__/
+*.pyc
+*.pyo
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo

@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mythos AI — Learning Center</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Segoe UI',sans-serif;background:#0a0a1a;color:#eee;min-height:100vh;display:flex;flex-direction:column}
+.top-bar{background:#111128;border-bottom:1px solid #2a2a4a;padding:12px 24px;display:flex;align-items:center;gap:16px;flex-shrink:0}
+.top-bar h1{color:#F5D742;font-size:20px;letter-spacing:1px}
+.top-bar .sub{color:#555;font-size:11px}
+.tab-bar{display:flex;background:#0e0e2a;border-bottom:1px solid #2a2a4a;flex-shrink:0;padding:0 16px;gap:2px}
+.tab-btn{padding:10px 20px;cursor:pointer;font-size:14px;color:#666;border-bottom:2px solid transparent;transition:all 0.15s}
+.tab-btn:hover{color:#F5D742;background:rgba(245,215,66,0.05)}
+.tab-btn.active{color:#F5D742;border-bottom-color:#F5D742;font-weight:bold}
+.tab-content{flex:1;display:none;overflow:auto}
+.tab-content.active{display:flex;flex-direction:column}
+.reader-layout{display:flex;flex:1;height:calc(100vh - 80px)}
+.reader-sidebar{width:220px;min-width:220px;background:#111128;border-right:1px solid #2a2a4a;overflow-y:auto;flex-shrink:0}
+.reader-sidebar .rch{padding:8px 14px;cursor:pointer;font-size:13px;color:#999;border-left:3px solid transparent;transition:all 0.1s}
+.reader-sidebar .rch:hover{background:rgba(245,215,66,0.05);color:#ddd}
+.reader-sidebar .rch.active{color:#F5D742;border-left-color:#F5D742;background:rgba(245,215,66,0.08);font-weight:bold}
+.reader-sidebar .rch .rpg{color:#555;font-size:10px;display:block;margin-top:1px}
+.reader-sidebar .rch .rpdf{color:#444;font-size:10px}
+.reader-main{flex:1;display:flex;flex-direction:column}
+.reader-main .pdf-wrap{flex:1;background:#0a0a1a;position:relative}
+.reader-main .pdf-wrap embed,.reader-main .pdf-wrap iframe{width:100%;height:100%;border:none}
+.reader-main .pdf-placeholder{display:flex;flex-direction:column;align-items:center;justify-content:center;height:100%;color:#444;gap:12px}
+.reader-main .pdf-placeholder .icon{font-size:48px}
+.reader-main .pdf-placeholder .hint{font-size:13px}
+.reader-toolbar{display:flex;align-items:center;gap:12px;padding:8px 14px;background:#111128;border-bottom:1px solid #2a2a4a;flex-shrink:0}
+.reader-toolbar .open-btn{padding:6px 16px;border:1px solid #F5D742;background:transparent;color:#F5D742;border-radius:5px;cursor:pointer;font-size:12px;white-space:nowrap}
+.reader-toolbar .open-btn:hover{background:#F5D742;color:#111}
+.reader-toolbar #reader-ch-label{color:#888;font-size:12px}
+.reader-main .pdf-info{padding:6px 14px;background:#111128;border-top:1px solid #2a2a4a;font-size:11px;color:#555;display:flex;justify-content:space-between;flex-shrink:0}
+.summary-wrap{max-width:900px;margin:0 auto;padding:20px;width:100%}
+.summary-wrap .ctrl{margin-bottom:16px;display:flex;gap:10px;align-items:center}
+.summary-wrap select{padding:8px 14px;border:1px solid #333;background:#1a1a3e;color:#eee;border-radius:6px;font-size:14px;cursor:pointer;outline:none}
+.summary-wrap select:focus{border-color:#F5D742}
+.summary-wrap .ch-title{font-size:22px;color:#F5D742;font-weight:bold}
+.summary-wrap .ch-range{font-size:12px;color:#555;margin-top:2px;margin-bottom:16px}
+.summary-wrap .ch-range .pdf-link{color:#F5D742;text-decoration:none;cursor:pointer;border-bottom:1px dashed rgba(245,215,66,0.3)}
+.summary-wrap .ch-range .pdf-link:hover{border-bottom-color:#F5D742}
+.summary-wrap .sec{margin-bottom:16px}
+.summary-wrap .sec h3{font-size:15px;color:#F5D742;margin-bottom:6px;padding-bottom:4px;border-bottom:1px solid #1a1a3e}
+.summary-wrap .sec .cnt{font-size:11px;color:#555;margin-left:6px}
+.summary-wrap .char-grid{display:flex;flex-wrap:wrap;gap:4px}
+.summary-wrap .char-chip{padding:4px 10px;border-radius:4px;font-size:12px;background:#111128;border:1px solid #2a2a4a;color:#bbb}
+.summary-wrap .char-chip .cn{color:#eee;font-weight:bold}
+.summary-wrap .char-chip .cr{color:#666;font-size:10px;margin-left:3px}
+.summary-wrap .char-chip .ce{color:#555;font-size:10px;margin-left:2px}
+.summary-wrap .myth-item{padding:6px 10px;margin-bottom:4px;background:#111128;border:1px solid #2a2a4a;border-radius:4px;font-size:12px}
+.summary-wrap .myth-item .mn{color:#F5D742;font-weight:bold;font-size:13px}
+.summary-wrap .myth-item .ms{color:#888;font-size:11px;margin-top:2px}
+.summary-wrap .place-list{display:flex;flex-wrap:wrap;gap:4px}
+.summary-wrap .place-item{padding:3px 8px;border-radius:3px;font-size:11px;background:#111128;border:1px solid #2a2a4a;color:#999}
+.summary-wrap .concept-item{padding:6px 10px;margin-bottom:3px;background:#111128;border:1px solid #2a2a4a;border-radius:4px;font-size:12px}
+.summary-wrap .concept-item .cn{color:#F5D742;font-weight:bold}
+.summary-wrap .concept-item .cd{color:#888;margin-left:4px}
+.summary-wrap .art-item{padding:6px 10px;margin-bottom:3px;background:#111128;border:1px solid #2a2a4a;border-radius:4px;font-size:12px;color:#999}
+.summary-wrap .art-item .an{color:#F5D742;font-weight:bold}
+.summary-wrap .rp{color:#555;font-size:10px;margin-left:4px}
+.quiz-wrap{max-width:860px;margin:0 auto;padding:20px;width:100%}
+.quiz-wrap .ctrl{display:flex;gap:8px;margin-bottom:12px;flex-wrap:wrap;align-items:center}
+.quiz-wrap .ctrl select{padding:7px 12px;border:1px solid #333;background:#1a1a3e;color:#eee;border-radius:5px;font-size:13px;cursor:pointer;outline:none}
+.quiz-wrap .ctrl select:focus{border-color:#F5D742}
+.quiz-wrap .ctrl .set-btn{padding:6px 14px;border:1px solid #333;background:#111128;color:#999;border-radius:5px;cursor:pointer;font-size:12px}
+.quiz-wrap .ctrl .set-btn:hover{background:#F5D742;color:#111}
+.quiz-wrap .ctrl .set-btn.active{background:#F5D742;color:#111;font-weight:bold}
+.quiz-wrap .ctrl .filter-btn{padding:5px 12px;border:1px solid #333;background:transparent;color:#666;border-radius:4px;cursor:pointer;font-size:11px}
+.quiz-wrap .ctrl .filter-btn:hover{color:#F5D742;border-color:#F5D742}
+.quiz-wrap .ctrl .filter-btn.on{color:#F5D742;border-color:#F5D742}
+.quiz-wrap .sb{display:flex;justify-content:space-between;font-size:13px;color:#888;margin-bottom:10px;padding-bottom:6px;border-bottom:1px solid #2a2a4a;gap:16px}
+.quiz-wrap .q{background:#111128;border:1px solid #2a2a4a;border-radius:8px;padding:14px 16px;margin-bottom:10px}
+.quiz-wrap .q.hide{display:none}
+.quiz-wrap .qh{font-size:10px;color:#555;margin-bottom:4px}
+.quiz-wrap .qt{font-size:15px;margin-bottom:10px;line-height:1.5}
+.quiz-wrap .opts{display:flex;flex-direction:column;gap:5px}
+.quiz-wrap .opts label{display:flex;align-items:center;gap:8px;padding:7px 12px;border:1px solid #2a2a4a;border-radius:5px;cursor:pointer;font-size:13px}
+.quiz-wrap .opts label:hover{border-color:#555}
+.quiz-wrap .opts label.ok{border-color:#2ecc71;background:rgba(46,204,113,0.1);opacity:0.7;cursor:default}
+.quiz-wrap .opts label.no{border-color:#e74c3c;background:rgba(231,76,60,0.1);opacity:0.7;cursor:default}
+.quiz-wrap .tfs{display:flex;gap:8px}
+.quiz-wrap .tfs button{padding:7px 28px;border:1px solid #333;border-radius:5px;cursor:pointer;font-size:14px;background:#1a1a3e;color:#bbb}
+.quiz-wrap .tfs button:hover{border-color:#F5D742}
+.quiz-wrap .tfs button.ok{border-color:#2ecc71;background:rgba(46,204,113,0.2);color:#2ecc71}
+.quiz-wrap .tfs button.no{border-color:#e74c3c;background:rgba(231,76,60,0.2);color:#e74c3c}
+.quiz-wrap .sai{width:100%;padding:9px 12px;border:1px solid #333;border-radius:5px;background:#1a1a3e;color:#eee;font-size:14px;outline:0}
+.quiz-wrap .sai:focus{border-color:#F5D742}
+.quiz-wrap .sai.ok{border-color:#2ecc71}
+.quiz-wrap .sai.no{border-color:#e74c3c}
+.quiz-wrap .exp{display:none;margin-top:10px;padding:10px 14px;background:rgba(245,215,66,0.04);border:1px solid rgba(245,215,66,0.15);border-radius:5px;font-size:13px;color:#bbb;line-height:1.5}
+.quiz-wrap .exp .rf{color:#555;font-size:11px;margin-top:3px}
+.quiz-wrap .hlp{font-size:11px;color:#555;margin-top:5px;background:none;border:none;cursor:pointer;padding:4px 0}
+.quiz-wrap .hlp:hover{color:#F5D742}
+.quiz-wrap .ok-badge{color:#2ecc71;font-size:12px;margin-left:6px}
+.quiz-wrap .no-badge{color:#e74c3c;font-size:12px;margin-left:6px}
+.quiz-wrap .empty-set{text-align:center;padding:40px;color:#444;font-size:14px}
+.quiz-wrap .empty-set .icon{font-size:36px;display:block;margin-bottom:8px}
+::-webkit-scrollbar{width:5px}
+::-webkit-scrollbar-track{background:#111128}
+::-webkit-scrollbar-thumb{background:#333;border-radius:3px}
+@media(max-width:768px){.reader-sidebar{width:160px;min-width:160px}}
+</style>
+</head>
+<body>
+
+<div class="top-bar">
+  <h1>Mythos AI — Learning Center</h1>
+  <span class="sub">Textbook-Grounded Learning Platform · Classical Mythology</span>
+</div>
+
+<div class="tab-bar">
+  <div class="tab-btn active" data-tab="reader" onclick="switchTab('reader')">&#x1F4D6; Textbook Reader</div>
+  <div class="tab-btn" data-tab="summary" onclick="switchTab('summary')">&#x1F4C4; Chapter Summary</div>
+  <div class="tab-btn" data-tab="quiz" onclick="switchTab('quiz')">&#x1F4DD; Chapter Quiz</div>
+</div>
+
+<div class="tab-content active" id="tab-reader">
+<div class="reader-layout">
+  <div class="reader-sidebar" id="reader-list"></div>
+  <div class="reader-main" id="reader-main">
+    <div class="reader-toolbar" id="reader-toolbar" style="display:none">
+      <span id="reader-ch-label"></span>
+      <button class="open-btn" onclick="openPdfInTab()">&#x1F4C4; Open PDF in New Tab</button>
+    </div>
+    <div class="pdf-wrap">
+      <div class="pdf-placeholder" id="pdf-placeholder">
+        <div class="icon">&#x1F4D6;</div>
+        <div class="hint">Select a chapter from the left to start reading</div>
+      </div>
+      <iframe id="pdf-iframe" style="display:none"></iframe>
+    </div>
+    <div class="pdf-info" id="pdf-info"></div>
+  </div>
+</div>
+</div>
+
+<div class="tab-content" id="tab-summary">
+<div class="summary-wrap">
+  <div class="ctrl">
+    <select id="summary-ch-select" onchange="showSummary(parseInt(this.value))">
+      <option value="0">Select chapter...</option>
+    </select>
+  </div>
+  <div id="summary-content"></div>
+</div>
+</div>
+
+<div class="tab-content" id="tab-quiz">
+<div class="quiz-wrap">
+  <div class="ctrl" id="quiz-ctrl">
+    <select id="quiz-ch-select" onchange="switchQuizChapter(parseInt(this.value))">
+      <option value="0">Select chapter...</option>
+    </select>
+  </div>
+  <div id="quiz-content"><div class="empty-set"><span class="icon">&#x1F4DD;</span>Select a chapter above to start quiz</div></div>
+</div>
+</div>
+
+<script>
+var CH_SUMMARIES = {SUMMARY_JSON};
+var CH_RANGES = {RANGE_JSON};
+var CH_QUIZZES = {QUIZ_JSON};
+var PDF_URL = "{PDF_PATH}";
+
+function switchTab(name) {
+  document.querySelectorAll('.tab-btn').forEach(function(b){b.classList.toggle('active', b.getAttribute('data-tab')===name)});
+  document.querySelectorAll('.tab-content').forEach(function(c){c.classList.toggle('active', c.id==='tab-'+name)});
+}
+
+function buildReaderList() {
+  var html = '';
+  for (var ch = 1; ch <= 24; ch++) {
+    var r = CH_RANGES[ch];
+    if (!r) continue;
+    var label = 'Chapter ' + ch;
+    var pageInfo = '';
+    if (r.pdf_start) {
+      pageInfo = '<span class="rpg">pp. ' + r.printed_start + '-' + r.printed_end + '</span><span class="rpdf">PDF p. ' + r.pdf_start + '</span>';
+    } else {
+      pageInfo = '<span class="rpg">pp. ' + (r.printed_start||'??') + '-' + (r.printed_end||'??') + '</span><span class="rpdf">(open PDF)</span>';
+    }
+    html += '<div class="rch" data-ch="' + ch + '" onclick="openChapter(' + ch + ')">' + label + pageInfo + '</div>';
+  }
+  document.getElementById('reader-list').innerHTML = html;
+}
+
+var currentPdfPage = 1;
+
+function openChapter(ch) {
+  document.querySelectorAll('.rch').forEach(function(el){el.classList.toggle('active', parseInt(el.getAttribute('data-ch'))===ch)});
+  var r = CH_RANGES[ch];
+  var iframe = document.getElementById('pdf-iframe');
+  var placeholder = document.getElementById('pdf-placeholder');
+  var info = document.getElementById('pdf-info');
+  var toolbar = document.getElementById('reader-toolbar');
+  var chLabel = document.getElementById('reader-ch-label');
+
+  var pdfPage = r && r.pdf_start ? r.pdf_start : 1;
+  currentPdfPage = pdfPage;
+  // Add cache-busting query param so iframe reloads when #page changes
+  var pdfUrl = PDF_URL + '?ch=' + ch + '#page=' + pdfPage;
+
+  // Show toolbar with chapter label + open button
+  toolbar.style.display = 'flex';
+  chLabel.textContent = 'Chapter ' + ch;
+
+  // Try iframe embed (works in Firefox, Edge; Chrome blocks local PDF embeds)
+  // Reset src first to force reload when only the anchor differs
+  iframe.src = '';
+  setTimeout(function(){ iframe.src = pdfUrl; }, 50);
+  iframe.style.display = 'block';
+  placeholder.style.display = 'none';
+
+  var note = 'Chapter ' + ch;
+  if (r && r.printed_start) { note += ' | Printed pp. ' + r.printed_start + '-' + r.printed_end; }
+  if (r && r.pdf_start) { note += ' | PDF page ' + r.pdf_start; }
+  else { note += ' | Note: opened at PDF page 1 (front matter)'; }
+  note += ' | Use "Open PDF in New Tab" if viewer is blank';
+  info.textContent = note;
+}
+
+function openPdfInTab() {
+  // Use cache-busting anchor; fragment alone works in new tab
+  var pdfUrl = PDF_URL + '#page=' + currentPdfPage;
+  window.open(pdfUrl, '_blank');
+}
+
+function populateSummarySelect() {
+  var sel = document.getElementById('summary-ch-select');
+  for (var ch = 1; ch <= 24; ch++) {
+    var opt = document.createElement('option');
+    opt.value = ch; opt.textContent = 'Chapter ' + ch;
+    sel.appendChild(opt);
+  }
+}
+
+function showSummary(ch) {
+  var data = CH_SUMMARIES[ch];
+  var r = CH_RANGES[ch];
+  if (!data) { document.getElementById('summary-content').innerHTML = '<div style="color:#444;padding:20px">No data.</div>'; return; }
+  var h = '';
+  h += '<div class="ch-title">Chapter ' + ch + '</div>';
+  if (r && r.printed_start) {
+    h += '<div class="ch-range">Printed pp. ' + r.printed_start + '-' + r.printed_end;
+    if (r.pdf_start) { h += ' | <a class="pdf-link" onclick="switchTab(\'reader\');setTimeout(function(){openChapter(' + ch + ')},50)">Open at PDF p. ' + r.pdf_start + ' \u2192</a>'; }
+    h += '</div>';
+  }
+  if (data.characters && data.characters.length) {
+    h += '<div class="sec"><h3>Core Characters <span class="cnt">(' + data.characters.length + ')</span></h3><div class="char-grid">';
+    data.characters.forEach(function(c) {
+      var rom = c.r && c.r !== c.n ? ' <span class="cr">(' + c.r + ')</span>' : '';
+      var ep = c.e && c.e.length ? ' <span class="ce">\u00b7 ' + c.e.slice(0,3).join(', ') + '</span>' : '';
+      h += '<div class="char-chip"><span class="cn">' + esc(c.n) + '</span>' + rom + ep + '</div>';
+    });
+    h += '</div></div>';
+  }
+  if (data.myths && data.myths.length) {
+    h += '<div class="sec"><h3>Major Myths <span class="cnt">(' + data.myths.length + ')</span></h3>';
+    data.myths.forEach(function(m) { h += '<div class="myth-item"><div class="mn">' + esc(m.n) + pg(m.p) + '</div>' + (m.s ? '<div class="ms">' + esc(m.s) + '</div>' : '') + '</div>'; });
+    h += '</div>';
+  }
+  if (data.concepts && data.concepts.length) {
+    h += '<div class="sec"><h3>Key Concepts <span class="cnt">(' + data.concepts.length + ')</span></h3>';
+    data.concepts.forEach(function(co) { h += '<div class="concept-item"><span class="cn">' + esc(co.n) + '</span>' + pg(co.p) + (co.de ? '<span class="cd">\u2014 ' + esc(co.de) + '</span>' : '') + '</div>'; });
+    h += '</div>';
+  }
+  if (data.places && data.places.length) {
+    h += '<div class="sec"><h3>Places <span class="cnt">(' + data.places.length + ')</span></h3><div class="place-list">';
+    data.places.forEach(function(p) { h += '<span class="place-item">' + esc(p) + '</span>'; });
+    h += '</div></div>';
+  }
+  if (data.artworks && data.artworks.length) {
+    h += '<div class="sec"><h3>Artworks <span class="cnt">(' + data.artworks.length + ')</span></h3>';
+    data.artworks.forEach(function(a) { h += '<div class="art-item"><span class="an">' + esc(a.n) + '</span>' + pg(a.p) + (a.de ? ' \u2014 ' + esc(a.de).slice(0, 120) : '') + '</div>'; });
+    h += '</div>';
+  }
+  document.getElementById('summary-content').innerHTML = h;
+}
+
+var quizState = {};
+var quizChapter = 0;
+var quizSet = 0;
+var quizFilter = 'all';
+
+function populateQuizSelect() {
+  var sel = document.getElementById('quiz-ch-select');
+  for (var ch = 1; ch <= 24; ch++) {
+    var opt = document.createElement('option');
+    opt.value = ch; opt.textContent = 'Chapter ' + ch;
+    sel.appendChild(opt);
+  }
+}
+
+function switchQuizChapter(ch) {
+  quizChapter = ch; quizSet = 0; quizState = {};
+  buildQuizSetControls();
+  renderQuiz();
+}
+
+function buildQuizSetControls() {
+  var ctrl = document.getElementById('quiz-ctrl');
+  var existing = ctrl.querySelectorAll('.set-btn, .filter-btn, .sb, .quiz-extra');
+  existing.forEach(function(el){el.remove()});
+  var sets = CH_QUIZZES[quizChapter];
+  if (!sets || !sets.length) return;
+  for (var s = 0; s < sets.length; s++) {
+    var btn = document.createElement('button');
+    btn.className = 'set-btn' + (s === quizSet ? ' active' : '');
+    btn.textContent = 'Set ' + (s + 1);
+    btn.setAttribute('data-set', s);
+    btn.onclick = function(){ switchQuizSet(parseInt(this.getAttribute('data-set'))); };
+    ctrl.appendChild(btn);
+  }
+  var filterTypes = ['all','mc','tf','sa'];
+  var filterLabels = {all:'\u5168\u90e8', mc:'\u9009\u62e9\u9898', tf:'\u5224\u65ad\u9898', sa:'\u7b80\u7b54\u9898'};
+  filterTypes.forEach(function(f) {
+    var btn = document.createElement('button');
+    btn.className = 'filter-btn' + (f === 'all' ? ' on' : '');
+    btn.textContent = filterLabels[f];
+    btn.setAttribute('data-f', f);
+    btn.onclick = function(){ filterQuiz(this); };
+    ctrl.appendChild(btn);
+  });
+  var sb = document.createElement('div');
+  sb.className = 'sb quiz-extra';
+  sb.id = 'quiz-sb';
+  sb.innerHTML = '<span>Ready</span><span></span>';
+  ctrl.appendChild(sb);
+}
+
+function switchQuizSet(s) {
+  quizSet = s; quizState = {};
+  document.querySelectorAll('.set-btn').forEach(function(b){b.classList.toggle('active', parseInt(b.getAttribute('data-set'))===s)});
+  renderQuiz();
+}
+
+function filterQuiz(btn) {
+  quizFilter = btn.getAttribute('data-f');
+  document.querySelectorAll('.filter-btn').forEach(function(b){b.classList.remove('on')});
+  btn.classList.add('on');
+  applyQuizFilter();
+}
+
+function applyQuizFilter() {
+  document.querySelectorAll('#quiz-content .q').forEach(function(el){
+    el.style.display = (quizFilter === 'all' || el.classList.contains(quizFilter)) ? 'block' : 'none';
+  });
+}
+
+function getCurrentQuestions() {
+  var sets = CH_QUIZZES[quizChapter];
+  if (!sets || !sets[quizSet]) return [];
+  return sets[quizSet];
+}
+
+function esc(s) { return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;').replace(/'/g,'&#39;'); }
+function pg(pages) { if (!pages || !pages.length) return ''; return ' <span class="rp">p.' + pages.join(', p.') + '</span>'; }
+
+function renderQuiz() {
+  var questions = getCurrentQuestions();
+  var container = document.getElementById('quiz-content');
+  if (!questions || !questions.length) {
+    container.innerHTML = '<div class="empty-set"><span class="icon">&#x1F4DD;</span>No questions available for this set.</div>';
+    return;
+  }
+  var A = quizState;
+  var T = {mc:'\u591a\u9009\u9898', tf:'\u5224\u65ad\u9898', sa:'\u7b80\u7b54\u9898'};
+  var h = '';
+  questions.forEach(function(q, i) {
+    h += '<div class="q ' + q.t + '" data-i="' + i + '">';
+    h += '<div class="qh">' + T[q.t] + ' \u00b7 ' + esc(q.cat) + '</div>';
+    h += '<div class="qt">' + (i+1) + '. ' + esc(q.q) + '</div>';
+    if (q.t === 'mc') {
+      h += '<div class="opts">';
+      q.opts.forEach(function(o) {
+        var cls = '', tag = '';
+        if (A[i] !== undefined) {
+          cls = o === q.ans ? 'ok' : 'no';
+          tag = o === q.ans ? ' <span class="ok-badge">\u2713</span>' : (A[i] === o ? ' <span class="no-badge">\u2717</span>' : '');
+        }
+        h += '<label class="' + cls + '" data-i="' + i + '" data-v="' + esc(o) + '"><input type="radio" name="q' + i + '"' + (A[i] !== undefined ? ' disabled' : '') + '>' + esc(o) + tag + '</label>';
+      });
+      h += '</div>';
+    }
+    if (q.t === 'tf') {
+      h += '<div class="tfs">';
+      [['True','\u2713 \u6b63\u786e'],['False','\u2717 \u9519\u8bef']].forEach(function(pair) {
+        var v = pair[0], label = pair[1];
+        var cls = '';
+        if (A[i] !== undefined) { cls = (v === 'True') === q.ans ? 'ok' : 'no'; }
+        h += '<button class="' + cls + '" data-i="' + i + '" data-v="' + v + '"' + (A[i] !== undefined ? ' disabled' : '') + '>' + label + '</button>';
+      });
+      h += '</div>';
+      if (A[i] !== undefined) {
+        var userOk = (A[i] === 'True') === q.ans;
+        h += '<div style="margin-top:6px;font-size:13px">' + (userOk ? '<span style="color:#2ecc71">\u2713 \u56de\u7b54\u6b63\u786e</span>' : '<span style="color:#e74c3c">\u2717 \u56de\u7b54\u9519\u8bef</span>') + '</div>';
+      }
+    }
+    if (q.t === 'sa') {
+      var val = A[i] !== undefined ? A[i] : '';
+      var ic = 'sai';
+      if (A[i] !== undefined) ic += val.toLowerCase() === q.ans.toLowerCase() ? ' ok' : ' no';
+      h += '<input class="' + ic + '" type="text" value="' + esc(val) + '" placeholder="\u8f93\u5165\u7b54\u6848..." data-i="' + i + '"' + (A[i] !== undefined ? ' disabled' : '') + '>';
+      if (A[i] !== undefined) {
+        h += '<span style="margin-left:6px">' + (val.toLowerCase() === q.ans.toLowerCase() ? '<span class="ok-badge">\u2713</span>' : '<span class="no-badge">\u2717 ' + esc(q.ans) + '</span>') + '</span>';
+      }
+    }
+    h += '<div class="exp" id="ex-' + i + '"><div>' + esc(q.exp) + '</div>' + (q.ref ? '<div class="rf">' + esc(q.ref) + '</div>' : '') + '</div>';
+    if (A[i] === undefined) { h += '<button class="hlp" data-r="' + i + '">\u663e\u793a\u7b54\u6848</button>'; }
+    else { h += '<button class="hlp" data-t="' + i + '">\u89e3\u6790</button>'; }
+    h += '</div>';
+  });
+  container.innerHTML = h;
+  updateQuizScore();
+  applyQuizFilter();
+  bindQuizEvents();
+}
+
+function updateQuizScore() {
+  var questions = getCurrentQuestions();
+  var A = quizState;
+  var tot = 0, ok = 0;
+  questions.forEach(function(q, i) {
+    if (A[i] !== undefined) {
+      tot++;
+      if (q.t === 'mc' && A[i] === q.ans) ok++;
+      else if (q.t === 'tf' && (A[i] === 'True') === q.ans) ok++;
+      else if (q.t === 'sa' && A[i].toLowerCase() === q.ans.toLowerCase()) ok++;
+    }
+  });
+  var sb = document.getElementById('quiz-sb');
+  if (sb) sb.innerHTML = '<span>\u5df2\u7b54: ' + tot + '/' + questions.length + ' \u6b63\u786e: ' + ok + '</span><span>' + (questions.length ? Math.round(tot/questions.length*100) : 0) + '%</span>';
+}
+
+function bindQuizEvents() {
+  document.querySelectorAll('#quiz-content .opts label').forEach(function(el) {
+    el.onclick = function() {
+      var i = parseInt(this.getAttribute('data-i'));
+      if (quizState[i] !== undefined) return;
+      quizState[i] = this.getAttribute('data-v');
+      renderQuiz();
+      document.getElementById('ex-' + i).style.display = 'block';
+    };
+  });
+  document.querySelectorAll('#quiz-content .tfs button').forEach(function(el) {
+    el.onclick = function() {
+      var i = parseInt(this.getAttribute('data-i'));
+      if (quizState[i] !== undefined) return;
+      quizState[i] = this.getAttribute('data-v');
+      renderQuiz();
+      document.getElementById('ex-' + i).style.display = 'block';
+    };
+  });
+  document.querySelectorAll('#quiz-content .sai').forEach(function(el) {
+    el.onkeydown = function(e) {
+      if (e.key !== 'Enter') return;
+      var i = parseInt(this.getAttribute('data-i'));
+      if (quizState[i] !== undefined) return;
+      var v = this.value.trim();
+      if (!v) return;
+      quizState[i] = v;
+      renderQuiz();
+      document.getElementById('ex-' + i).style.display = 'block';
+    };
+  });
+  document.querySelectorAll('#quiz-content .hlp').forEach(function(el) {
+    el.onclick = function() {
+      var r = this.getAttribute('data-r');
+      var t = this.getAttribute('data-t');
+      if (r !== null) { document.getElementById('ex-' + r).style.display = 'block'; }
+      else if (t !== null) {
+        var ex = document.getElementById('ex-' + t);
+        ex.style.display = ex.style.display === 'none' ? 'block' : 'none';
+      }
+    };
+  });
+}
+
+buildReaderList();
+populateSummarySelect();
+populateQuizSelect();
+if (CH_RANGES[1]) openChapter(1);
+</script>
+</body>
+</html>
