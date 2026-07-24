@@ -14,6 +14,26 @@
 
 ---
 
+## 📸 界面预览
+
+| 首页 | 学习中心 |
+|:---:|:---:|
+| ![首页](screenshots/home.png) | ![学习中心](screenshots/learning_center_1.png) |
+
+| 角色索引 | 家族树 |
+|:---:|:---:|
+| ![角色索引](screenshots/character_index_1.png) | ![家族树](screenshots/family_tree_1.png) |
+
+| 知识测验 | 填字游戏 |
+|:---:|:---:|
+| ![知识测验](screenshots/quiz.png) | ![填字游戏](screenshots/crossword.png) |
+
+| 艺术品识别 | AI Tutor |
+|:---:|:---:|
+| ![艺术品识别](screenshots/artwork_quiz_1.png) | ![AI Tutor](screenshots/ai_tutor.png) |
+
+---
+
 ## 🎯 教育目标
 
 面向英语语言文学本科生的神话学辅助教学平台，结合：
