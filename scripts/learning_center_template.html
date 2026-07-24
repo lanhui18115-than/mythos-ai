@@ -217,7 +217,9 @@ function openChapter(ch) {
 
   // Load per-chapter PDF from data/chapter_pdfs/ch_XX.pdf
   var chPadded = ch < 10 ? '0' + ch : '' + ch;
-  var pdfUrl = '../data/chapter_pdfs/ch_' + chPadded + '.pdf' + '#page=' + pdfPage;
+  // Each chapter PDF starts at page 1; pdfPage is the PDF page number in the original book
+  var pageInChapter = r && r.pdf_start ? 1 : 1;
+  var pdfUrl = '../data/chapter_pdfs/ch_' + chPadded + '.pdf' + '#page=' + pageInChapter;
   iframe.src = '';
   setTimeout(function(){ iframe.src = pdfUrl; }, 50);
   iframe.style.display = 'block';
