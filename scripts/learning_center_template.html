@@ -196,8 +196,10 @@ function buildReaderList() {
 }
 
 var currentPdfPage = 1;
+var currentChapter = 1;
 
 function openChapter(ch) {
+  currentChapter = ch;
   document.querySelectorAll('.rch').forEach(function(el){el.classList.toggle('active', parseInt(el.getAttribute('data-ch'))===ch)});
   var r = CH_RANGES[ch];
   var iframe = document.getElementById('pdf-iframe');
@@ -213,22 +215,9 @@ function openChapter(ch) {
   toolbar.style.display = 'flex';
   chLabel.textContent = 'Chapter ' + ch;
 
-  var isRemote = PDF_URL.indexOf('docs.google.com') !== -1 || PDF_URL.indexOf('drive.google.com') !== -1;
-  if (isRemote) {
-    var pdfUrl = PDF_URL + '#page=' + pdfPage;
-    iframe.src = '';
-    setTimeout(function(){ iframe.src = pdfUrl; }, 50);
-    iframe.style.display = 'block';
-    placeholder.style.display = 'none';
-    gdrive.style.display = 'none';
-    var note = 'Chapter ' + ch;
-    if (r && r.printed_start) { note += ' | Printed pp. ' + r.printed_start + '-' + r.printed_end; }
-    if (r && r.pdf_start) { note += ' | PDF page ' + r.pdf_start; }
-    info.textContent = note;
-    return;
-  }
-
-  var pdfUrl = PDF_URL + '?ch=' + ch + '#page=' + pdfPage;
+  // Load per-chapter PDF from data/chapter_pdfs/ch_XX.pdf
+  var chPadded = ch < 10 ? '0' + ch : '' + ch;
+  var pdfUrl = '../data/chapter_pdfs/ch_' + chPadded + '.pdf' + '#page=' + pdfPage;
   iframe.src = '';
   setTimeout(function(){ iframe.src = pdfUrl; }, 50);
   iframe.style.display = 'block';
@@ -244,12 +233,11 @@ function openChapter(ch) {
 }
 
 function openPdfInTab() {
-  if (PDF_URL.indexOf('docs.google.com') !== -1) {
-    window.open('https://drive.google.com/file/d/1OdZEZc1VhcpbHvn8HRPYafJAKzywUCqo/view#page=' + currentPdfPage, '_blank');
-  } else {
-    var pdfUrl = PDF_URL + '#page=' + currentPdfPage;
-    window.open(pdfUrl, '_blank');
-  }
+  var ch = currentChapter;
+  if (!ch) ch = 1;
+  var chPadded = ch < 10 ? '0' + ch : '' + ch;
+  var pdfUrl = '../data/chapter_pdfs/ch_' + chPadded + '.pdf#page=' + currentPdfPage;
+  window.open(pdfUrl, '_blank');
 }
 
 function populateSummarySelect() {

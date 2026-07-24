@@ -22,9 +22,8 @@ DATA_DIR = Path("data")
 KNOWLEDGE_DIR = DATA_DIR / "knowledge"
 OUTPUT_DIR = Path("output")
 OUTPUT_FILE = OUTPUT_DIR / "learning_center.html"
-# Google Drive 直链（用于 docs.viewer 嵌入）
-GOOGLE_DRIVE_ID = "1OdZEZc1VhcpbHvn8HRPYafJAKzywUCqo"
-PDF_PATH = f"https://docs.google.com/viewer?url=https://drive.google.com/uc?export=download%26id={GOOGLE_DRIVE_ID}&embedded=true"
+# 按章节拆分的 PDF 文件（data/chapter_pdfs/ch_XX.pdf）
+PDF_PATH = "../data/chapter_pdfs/ch_{ch:02d}.pdf"
 
 random.seed(137)
 
@@ -801,7 +800,7 @@ def generate_html():
     html = template.replace("{SUMMARY_JSON}", summary_json)
     html = html.replace("{RANGE_JSON}", range_json)
     html = html.replace("{QUIZ_JSON}", quiz_json)
-    html = html.replace("{PDF_PATH}", PDF_PATH)
+    html = html.replace("{PDF_PATH}", "../data/chapter_pdfs/ch_XX.pdf")
 
     return html
 
